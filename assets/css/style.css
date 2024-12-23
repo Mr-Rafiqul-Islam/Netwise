@@ -1,0 +1,128 @@
+/*
+  Theme Name: Netwise - IT Solutions & Technology Figma Template
+  Support: mr.rafiqulthedev@gmail.com
+  Description: Netwise - IT Solutions & Technology Figma Template
+  Version: 1.0
+*/
+/* CSS Index
+============================
+01. Variable CSS
+02. Common CSS
+03. Header
+04. Home
+05. About
+06. Services
+07. Portfolio
+08. Blog
+09. Contact
+10. Footer
+11. Theme Control
+============================
+*/
+/*=============================
+	1. Google Fonts
+===============================*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+/*=============================
+	01. Variable CSS start
+===============================*/
+:root {
+  --primary: #0044eb;
+  --black: #020842;
+  --secondary: #ffbe16;
+  --tertiary: #47b16a;
+  --paragraph-color: #49515b;
+  --bg-one: #cccccc;
+  --bg-two: #0f144b;
+  --font-Space: "Space Grotesk", serif;
+  --font-inter: "Inter", sans-serif;
+  --font-size: 18px;
+  --font-weight: 400;
+  --transition: all linear 0.3s;
+  --body-background: #ffffff;
+  --border-color: #cccccc;
+  --linear-gradient: linear-gradient(
+    180deg,
+    rgba(14, 43, 197, 0) 0%,
+    #0e2bc5 100%
+  );
+}
+
+/*=============================
+	02. Common CSS start
+===============================*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+button {
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-inter);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  color: var(--paragraph-color);
+  line-height: 160%;
+  background: var(--body-background);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-Space);
+  font-weight: 700;
+  color: var(--black);
+}
+
+p {
+  color: var(--paragraph-color);
+}
+
+.theme-btn {
+  padding: 10px 30px;
+  border-radius: 999px;
+}
+
+.theme-btn-primary {
+  background: var(--primary);
+}
+
+.theme-btn-border {
+  background: transparent;
+  border: 1px solid var(--border-color);
+}
+
+/*=============================
+	03. Header CSS start
+===============================*/
