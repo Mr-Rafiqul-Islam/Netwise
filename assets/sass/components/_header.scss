@@ -14,21 +14,47 @@
       }
       .navbar-collapse {
         .navbar-nav {
-			padding: 0;
-			gap: 25px;
+          padding: 0;
+          gap: 25px;
           .nav-item {
-			padding: 0;
+            padding: 0;
             .nav-link {
-				padding: 0;
-				color: var(--black);
-              	font-family: var(--font-space);
-              	line-height: 144%;
-				display: flex;
-				align-items: center;
-				gap: 5px;
-				i{
-					font-size: 18px;
-				}
+              padding: 0;
+              color: var(--black);
+              font-family: var(--font-space);
+              line-height: 144%;
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              i {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+        .call-to-action{
+          .icon{
+            width: 55px;
+            height: 55px;
+            background: white;
+            display: grid;
+            place-items: center;
+            color: var(--primary);
+            transition: var(--transition);
+          }
+          .info{
+            p{
+              letter-spacing: -0.36px;
+            }
+            h6{
+              line-height: 30px;
+              font-size: 18px;
+            }
+          }
+          &:hover{
+            .icon{
+              color: white;
+              background: var(--primary);
             }
           }
         }

@@ -164,3 +164,25 @@ p {
 .header-section .navbar .navbar-main .navbar-collapse .navbar-nav .nav-item .nav-link i {
   font-size: 18px;
 }
+.header-section .navbar .navbar-main .navbar-collapse .call-to-action .icon {
+  width: 55px;
+  height: 55px;
+  background: white;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  color: var(--primary);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.header-section .navbar .navbar-main .navbar-collapse .call-to-action .info p {
+  letter-spacing: -0.36px;
+}
+.header-section .navbar .navbar-main .navbar-collapse .call-to-action .info h6 {
+  line-height: 30px;
+  font-size: 18px;
+}
+.header-section .navbar .navbar-main .navbar-collapse .call-to-action:hover .icon {
+  color: white;
+  background: var(--primary);
+}
