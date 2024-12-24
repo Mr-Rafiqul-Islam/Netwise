@@ -44,6 +44,7 @@
     rgba(14, 43, 197, 0) 0%,
     #0e2bc5 100%
   );
+  --shadow: 0px 10px 30px 0px rgba(137, 139, 142, 0.2);
 }
 
 /*=============================
@@ -147,12 +148,13 @@ p {
 }
 .header-section .navbar .navbar-main .navbar-collapse .navbar-nav .nav-item {
   padding: 0;
+  position: relative;
 }
 .header-section .navbar .navbar-main .navbar-collapse .navbar-nav .nav-item .nav-link {
   padding: 0;
   color: var(--black);
   font-family: var(--font-space);
-  line-height: 144%;
+  line-height: 78px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,6 +165,40 @@ p {
 }
 .header-section .navbar .navbar-main .navbar-collapse .navbar-nav .nav-item .nav-link i {
   font-size: 18px;
+}
+.header-section .navbar .navbar-main .navbar-collapse .navbar-nav .nav-item .sub-menu {
+  width: 226px;
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  margin-top: 10px;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+}
+.header-section .navbar .navbar-main .navbar-collapse .navbar-nav .nav-item .sub-menu li a {
+  color: var(--black);
+  display: block;
+  background-color: transparent;
+  width: 100%;
+  padding: 8px 16px;
+  font-weight: 500;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.header-section .navbar .navbar-main .navbar-collapse .navbar-nav .nav-item .sub-menu li a:hover {
+  background-color: var(--primary);
+  color: white;
+}
+.header-section .navbar .navbar-main .navbar-collapse .navbar-nav .nav-item:hover > .sub-menu {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0px;
 }
 .header-section .navbar .navbar-main .navbar-collapse .call-to-action .icon {
   width: 55px;
