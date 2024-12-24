@@ -7,17 +7,15 @@
 
 /* CSS Index
 ============================
+*** Template Components ***
+============================
 01. Variable CSS
 02. Common CSS
-03. Header
-04. Home
-05. About
-06. Services
-07. Portfolio
-08. Blog
-09. Contact
-10. Footer
-11. Theme Control
+03. Header CSS
+
+*** Template Pages ***
+=========================
+
 ============================
 */
 
@@ -36,7 +34,7 @@
   --secondary: #ffbe16;
   --tertiary: #47b16a;
   --paragraph-color: #49515b;
-  --bg-one: #cccccc;
+  --bg-one: #f1f6fc;
   --bg-two: #0f144b;
   --font-Space: "Space Grotesk", serif;
   --font-inter: "Inter", sans-serif;
@@ -107,6 +105,13 @@ h6 {
 }
 p {
   color: var(--paragraph-color);
+}
+
+// container css
+.container{
+  max-width: 1290px;
+  padding: 0;
+  
 }
 // Theme btn css
 .theme-btn {

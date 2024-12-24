@@ -6,17 +6,15 @@
 */
 /* CSS Index
 ============================
+*** Template Components ***
+============================
 01. Variable CSS
 02. Common CSS
-03. Header
-04. Home
-05. About
-06. Services
-07. Portfolio
-08. Blog
-09. Contact
-10. Footer
-11. Theme Control
+03. Header CSS
+
+*** Template Pages ***
+=========================
+
 ============================
 */
 /*=============================
@@ -32,7 +30,7 @@
   --secondary: #ffbe16;
   --tertiary: #47b16a;
   --paragraph-color: #49515b;
-  --bg-one: #cccccc;
+  --bg-one: #f1f6fc;
   --bg-two: #0f144b;
   --font-Space: "Space Grotesk", serif;
   --font-inter: "Inter", sans-serif;
@@ -109,6 +107,11 @@ p {
   color: var(--paragraph-color);
 }
 
+.container {
+  max-width: 1290px;
+  padding: 0;
+}
+
 .theme-btn {
   padding: 10px 30px;
   border-radius: 999px;
@@ -126,3 +129,38 @@ p {
 /*=============================
 	03. Header CSS start
 ===============================*/
+.header-section .navbar {
+  padding: 0;
+}
+.header-section .navbar .navbar-main {
+  background: var(--bg-one);
+  padding: 18px 50px;
+  border-radius: 80px;
+  margin-top: 20px;
+}
+.header-section .navbar .navbar-main .navbar-brand {
+  padding: 0;
+}
+.header-section .navbar .navbar-main .navbar-collapse .navbar-nav {
+  padding: 0;
+  gap: 25px;
+}
+.header-section .navbar .navbar-main .navbar-collapse .navbar-nav .nav-item {
+  padding: 0;
+}
+.header-section .navbar .navbar-main .navbar-collapse .navbar-nav .nav-item .nav-link {
+  padding: 0;
+  color: var(--black);
+  font-family: var(--font-space);
+  line-height: 144%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+.header-section .navbar .navbar-main .navbar-collapse .navbar-nav .nav-item .nav-link i {
+  font-size: 18px;
+}

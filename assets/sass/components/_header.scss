@@ -1,3 +1,38 @@
 /*=============================
 	03. Header CSS start
 ===============================*/
+.header-section {
+  .navbar {
+    padding: 0;
+    .navbar-main {
+      background: var(--bg-one);
+      padding: 18px 50px;
+      border-radius: 80px;
+      margin-top: 20px;
+      .navbar-brand {
+        padding: 0;
+      }
+      .navbar-collapse {
+        .navbar-nav {
+			padding: 0;
+			gap: 25px;
+          .nav-item {
+			padding: 0;
+            .nav-link {
+				padding: 0;
+				color: var(--black);
+              	font-family: var(--font-space);
+              	line-height: 144%;
+				display: flex;
+				align-items: center;
+				gap: 5px;
+				i{
+					font-size: 18px;
+				}
+            }
+          }
+        }
+      }
+    }
+  }
+}
