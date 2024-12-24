@@ -6,7 +6,7 @@
     padding: 0;
     .navbar-main {
       background: var(--bg-one);
-      padding: 18px 50px;
+      padding: 8px 50px;
       border-radius: 80px;
       margin-top: 20px;
       .navbar-brand {
@@ -69,6 +69,7 @@
           }
         }
         .call-to-action {
+          gap: 15px;
           .icon {
             width: 55px;
             height: 55px;

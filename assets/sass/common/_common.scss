@@ -112,6 +112,9 @@ p {
 .container {
   max-width: 1290px;
   padding: 0;
+  @media (max-width:1399.98px) {
+    max-width: 1140px;
+  }
 }
 // Theme btn css
 .theme-btn {
