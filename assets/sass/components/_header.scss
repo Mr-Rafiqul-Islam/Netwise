@@ -2,13 +2,22 @@
 	03. Header CSS start
 ===============================*/
 .header-section {
+  position: fixed;
+  top:20px;
+  left: 0;
+  z-index: 999;
+  width: 100%;
   .navbar {
     padding: 0;
     .navbar-main {
+      max-width: 1296px;
+      @media (max-width: 1399.98px) {
+        max-width: 1116px;
+        padding: 8px 30px;
+      }
       background: var(--bg-one);
       padding: 8px 50px;
       border-radius: 80px;
-      margin-top: 20px;
       .navbar-brand {
         padding: 0;
       }
@@ -55,7 +64,7 @@
                   &:hover {
                     background-color: var(--primary);
                     color: white;
-                }
+                  }
                 }
               }
             }
@@ -68,33 +77,33 @@
             }
           }
         }
-        .call-to-action {
-          gap: 15px;
-          .icon {
-            width: 55px;
-            height: 55px;
-            background: white;
-            display: grid;
-            place-items: center;
-            color: var(--primary);
-            transition: var(--transition);
-          }
-          .info {
-            p {
-              letter-spacing: -0.36px;
-            }
-            h6 {
-              line-height: 30px;
-              font-size: 18px;
-            }
-          }
-          &:hover {
-            .icon {
-              color: white;
-              background: var(--primary);
-            }
-          }
-        }
+      }
+    }
+  }
+  .call-to-action {
+    gap: 15px;
+    .icon {
+      width: 55px;
+      height: 55px;
+      background: white;
+      display: grid;
+      place-items: center;
+      color: var(--primary);
+      transition: var(--transition);
+    }
+    .info {
+      p {
+        letter-spacing: -0.36px;
+      }
+      h6 {
+        line-height: 30px;
+        font-size: 18px;
+      }
+    }
+    &:hover {
+      .icon {
+        color: white;
+        background: var(--primary);
       }
     }
   }
@@ -105,7 +114,6 @@
   background-color: white;
   width: 100%;
   transition: var(--transition);
-  margin-top: 0;
 
   .mobile-topbar {
     width: 100%;
@@ -130,7 +138,7 @@
       &:hover {
         background-color: var(--primary);
         border-color: var(--primary);
-        color:white;
+        color: white;
       }
     }
   }
