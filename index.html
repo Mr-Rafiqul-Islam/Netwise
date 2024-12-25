@@ -24,7 +24,7 @@
 
   <!-- Header section start -->
   <header class="header-section">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-xl d-none d-xl-flex">
       <div class="container navbar-main">
         <a class="navbar-brand" href="#">
           <img src="./assets/images/logo/logo.png" alt="logo">
@@ -82,6 +82,96 @@
         </div>
       </div>
     </nav>
+
+    <!-- mobile navbar part start -->
+    <div class="mobile-menu-area d-block d-xl-none">
+      <div class="container">
+        <!-- mobile topbar -->
+        <div class="mobile-topbar">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="logo">
+              <a href="index.html"> <img src="assets/images/logo/logo.png" alt="logo"></a>
+            </div>
+            <div class="bars">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu -->
+      <div class="mobile-menu-overlay"></div>
+      <div class="mobile-menu-main">
+        <div class="logo">
+          <a href="index.html"> <img src="assets/images/logo/logo.png" alt="logo"></a>
+        </div>
+        <div class="close-mobile-menu"><i class="fas fa-times"></i></div>
+        <div class="menu-body">
+          <div class="menu-list">
+            <ul class="list-unstyled">
+              <li class="sub-mobile-menu">
+                <a href="#">Home <i class="fas fa-chevron-down float-end"></i></a>
+                <ul class="list-unstyled">
+                  <li><a href="index.html">Home One</a></li>
+                  <li><a href="home-two.html">Home Two</a></li>
+                </ul>
+              </li>
+              <li class="sub-mobile-menu">
+                <a href="about.html">About Us</a>
+              </li>
+              <li class="sub-mobile-menu">
+                <a href="#">Services <i class="fas fa-chevron-down float-end"></i></a>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="services.html">Service Single</a>
+                  </li>
+                  <li>
+                    <a href="service-details.html">Service Details</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sub-mobile-menu">
+                <a href="#">Projects <i class="fas fa-chevron-down float-end"></i></a>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="projects.html">Project Single</a>
+                  </li>
+                  <li>
+                    <a href="project-details.html">Project Details</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sub-mobile-menu">
+                <a href="#">Blog <i class="fas fa-chevron-down float-end"></i></a>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="blog.html">Blog Single</a>
+                  </li>
+                  <li>
+                    <a href="blog-details.html">Blog Details</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sub-mobile-menu">
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="call-us p-4">
+          <a href="tel:(+1) 652-3698" class="call-to-action d-flex align-items-center">
+            <div class="icon d-flex justify-content-center align-items-center rounded-pill">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="info">
+              <p class="help">Need help?</p>
+              <h5 class="number">(+1) 652-3698</h5>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- mobile navbar part end -->
+
   </header>
   <!-- Header section end -->
   <!-- Main area end -->
