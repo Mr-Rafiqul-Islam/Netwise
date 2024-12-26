@@ -1,0 +1,56 @@
+/*=============================
+	03. Banner CSS start
+===============================*/
+
+.banner-section {
+  background: white;
+  padding: 117px 0 17.83px 0;
+  .banner-content {
+      .banner-title {
+        .title-shape {
+          right: 80px;
+          top: -20px;
+        }
+      max-width: 541px;
+      font-size: 74px;
+      line-height: 84px;
+      letter-spacing: -1.48px;
+    }
+    .banner-info {
+      letter-spacing: -0.36px;
+      margin-top: 29px;
+      margin-bottom: 39px;
+      max-width: 463px;
+    }
+    .banner-btn {
+      gap: 50px;
+      .play-btn {
+        gap: 10px;
+        line-height: 28px;
+        letter-spacing: -0.36px;
+        color: var(--paragraph-color);
+
+        .icon {
+          display: grid;
+          place-content: center;
+          width: 50px;
+          height: 50px;
+          background: var(--secondary);
+          i {
+            color: var(--tertiary);
+          }
+        }
+      }
+    }
+  }
+  .custom-shadow{
+    width: 431px;
+    height: 431px;
+    background: var(--secondary);
+    opacity: 0.6;
+    filter: blur(152.6000061035px);
+    bottom: -176px;
+    right: -220px;
+
+  }
+}

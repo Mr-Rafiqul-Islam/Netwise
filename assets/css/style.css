@@ -11,6 +11,7 @@
 01. Variable CSS
 02. Common CSS
 03. Header CSS
+04. Banner CSS
 
 *** Template Pages ***
 =========================
@@ -93,6 +94,16 @@ body {
   overflow-x: hidden;
 }
 
+::-moz-selection {
+  background: var(--tertiary);
+  color: white;
+}
+
+::selection {
+  background: var(--tertiary);
+  color: white;
+}
+
 h1,
 h2,
 h3,
@@ -106,15 +117,51 @@ h6 {
 
 p {
   color: var(--paragraph-color);
+  letter-spacing: -0.36px;
 }
 
 .theme-btn {
-  padding: 10px 30px;
+  padding: 15px 30px;
   border-radius: 999px;
+  font-family: var(--font-Space);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.theme-btn .btn-arrow {
+  margin-left: 10px;
+}
+.theme-btn .btn-arrow .btn-arrow-fill {
+  fill: white;
 }
 
 .theme-btn-primary {
   background: var(--primary);
+  border: 1px solid var(--primary);
+  color: white;
+  position: relative;
+  z-index: 9;
+}
+.theme-btn-primary::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  top: 0;
+  left: 0;
+  content: "";
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  background: var(--black);
+  z-index: -1;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.theme-btn-primary:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .theme-btn-border {
@@ -412,4 +459,58 @@ p {
 }
 .mobile-menu-area .mobile-menu-action-btn a:hover {
   background-color: var(--black);
+}
+
+/*=============================
+	03. Banner CSS start
+===============================*/
+.banner-section {
+  background: white;
+  padding: 117px 0 17.83px 0;
+}
+.banner-section .banner-content .banner-title {
+  max-width: 541px;
+  font-size: 74px;
+  line-height: 84px;
+  letter-spacing: -1.48px;
+}
+.banner-section .banner-content .banner-title .title-shape {
+  right: 80px;
+  top: -20px;
+}
+.banner-section .banner-content .banner-info {
+  letter-spacing: -0.36px;
+  margin-top: 29px;
+  margin-bottom: 39px;
+  max-width: 463px;
+}
+.banner-section .banner-content .banner-btn {
+  gap: 50px;
+}
+.banner-section .banner-content .banner-btn .play-btn {
+  gap: 10px;
+  line-height: 28px;
+  letter-spacing: -0.36px;
+  color: var(--paragraph-color);
+}
+.banner-section .banner-content .banner-btn .play-btn .icon {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  width: 50px;
+  height: 50px;
+  background: var(--secondary);
+}
+.banner-section .banner-content .banner-btn .play-btn .icon i {
+  color: var(--tertiary);
+}
+.banner-section .custom-shadow {
+  width: 431px;
+  height: 431px;
+  background: var(--secondary);
+  opacity: 0.6;
+  -webkit-filter: blur(152.6000061035px);
+          filter: blur(152.6000061035px);
+  bottom: -176px;
+  right: -220px;
 }
