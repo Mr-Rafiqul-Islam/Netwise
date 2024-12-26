@@ -12,6 +12,7 @@
 02. Common CSS
 03. Header CSS
 04. Banner CSS
+05. Feature CSS
 
 *** Template Pages ***
 =========================
@@ -33,6 +34,7 @@
   --paragraph-color: #49515b;
   --bg-one: #f1f6fc;
   --bg-two: #0f144b;
+  --bg-three: #020842;
   --font-Space: "Space Grotesk", serif;
   --font-inter: "Inter", sans-serif;
   --font-size: 18px;
@@ -118,6 +120,18 @@ h6 {
 p {
   color: var(--paragraph-color);
   letter-spacing: -0.36px;
+}
+
+.section-bg {
+  background: var(--bg-one);
+}
+
+.py-120 {
+  padding: 120px 0;
+}
+
+.pt-120 {
+  padding-top: 120px;
 }
 
 .theme-btn {
@@ -500,9 +514,13 @@ p {
   width: 50px;
   height: 50px;
   background: var(--secondary);
-}
-.banner-section .banner-content .banner-btn .play-btn .icon i {
   color: var(--tertiary);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.banner-section .banner-content .banner-btn .play-btn:hover .icon {
+  background: var(--bg-three);
+  color: #ffffff;
 }
 .banner-section .custom-shadow {
   width: 431px;
@@ -513,4 +531,20 @@ p {
           filter: blur(152.6000061035px);
   bottom: -176px;
   right: -220px;
+}
+
+/*=============================
+	05. Feature CSS start
+===============================*/
+.feature-section .feature-content .sub-title {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--tertiary) !important;
+}
+.feature-section .feature-content .feature-title {
+  font-size: 60px;
+  line-height: 68px;
+  letter-spacing: -1.48px;
 }

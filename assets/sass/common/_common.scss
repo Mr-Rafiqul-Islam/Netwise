@@ -13,6 +13,7 @@
 02. Common CSS
 03. Header CSS
 04. Banner CSS
+05. Feature CSS
 
 *** Template Pages ***
 =========================
@@ -37,6 +38,7 @@
   --paragraph-color: #49515b;
   --bg-one: #f1f6fc;
   --bg-two: #0f144b;
+  --bg-three: #020842;
   --font-Space: "Space Grotesk", serif;
   --font-inter: "Inter", sans-serif;
   --font-size: 18px;
@@ -113,6 +115,18 @@ p {
   color: var(--paragraph-color);
   letter-spacing: -0.36px;
 }
+// section bg
+.section-bg{
+  background: var(--bg-one);
+}
+// custom padding class
+.py-120{
+  padding: 120px 0;
+}
+.pt-120{
+  padding-top: 120px;
+}
+
 
 // Theme btn css
 .theme-btn {
