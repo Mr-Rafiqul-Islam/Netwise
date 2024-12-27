@@ -10,6 +10,9 @@
 ============================
 01. Variable CSS
 02. Common CSS
+    A. Utilities CSS
+    B. Button CSS
+    C. Section Title CSS
 03. Header CSS
 04. Banner CSS
 05. Feature CSS
@@ -96,16 +99,6 @@ body {
   overflow-x: hidden;
 }
 
-::-moz-selection {
-  background: var(--tertiary);
-  color: white;
-}
-
-::selection {
-  background: var(--tertiary);
-  color: white;
-}
-
 h1,
 h2,
 h3,
@@ -122,6 +115,18 @@ p {
   letter-spacing: -0.36px;
 }
 
+/*=============================
+	A. Utilities CSS Start
+===============================*/
+::-moz-selection {
+  background: var(--tertiary);
+  color: white;
+}
+::selection {
+  background: var(--tertiary);
+  color: white;
+}
+
 .section-bg {
   background: var(--bg-one);
 }
@@ -134,6 +139,13 @@ p {
   padding-top: 120px;
 }
 
+.rounded-20 {
+  border-radius: 20px !important;
+}
+
+/*=============================
+	B. Button CSS Start
+===============================*/
 .theme-btn {
   padding: 15px 30px;
   border-radius: 999px;
@@ -181,6 +193,46 @@ p {
 .theme-btn-border {
   background: transparent;
   border: 1px solid var(--border-color);
+}
+
+/*=============================
+	C. Section Title CSS Start
+===============================*/
+.section-title .sub-title {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--tertiary) !important;
+  position: relative;
+  padding-right: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.section-title .sub-title::before, .section-title .sub-title::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.section-title .sub-title::before {
+  left: 100%;
+  width: 30px;
+  height: 2px;
+  background-color: var(--primary);
+}
+.section-title .sub-title::after {
+  right: -35px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--primary);
+}
+.section-title .title {
+  font-size: 60px;
+  line-height: 68px;
+  letter-spacing: -1.48px;
 }
 
 /*=============================
@@ -536,15 +588,7 @@ p {
 /*=============================
 	05. Feature CSS start
 ===============================*/
-.feature-section .feature-content .sub-title {
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--tertiary) !important;
-}
-.feature-section .feature-content .feature-title {
-  font-size: 60px;
-  line-height: 68px;
-  letter-spacing: -1.48px;
+.feature-section .feature-content .title {
+  max-width: 535px;
+  margin-bottom: 60px;
 }

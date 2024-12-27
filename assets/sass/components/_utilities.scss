@@ -1,0 +1,24 @@
+/*=============================
+	A. Utilities CSS Start
+===============================*/
+
+// custom selection
+::selection {
+  background: var(--tertiary);
+  color: white;
+}
+// custom bg
+.section-bg {
+  background: var(--bg-one);
+}
+// custom padding class
+.py-120 {
+  padding: 120px 0;
+}
+.pt-120 {
+  padding-top: 120px;
+}
+// custom radius
+.rounded-20{
+    border-radius: 20px !important;
+}
