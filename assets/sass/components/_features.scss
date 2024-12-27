@@ -3,9 +3,29 @@
 ===============================*/
 .feature-section {
   .feature-content {
-    .title{
+    padding-left: 43px;
+    .title {
       max-width: 535px;
       margin-bottom: 60px;
+    }
+    .feature-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      li {
+        gap: 30px;
+        .feature-info {
+          .feature-title {
+            margin-bottom: 10px;
+            font-size: 22px;
+            line-height: 36px;
+          }
+          .desc {
+            line-height: 28px;
+            max-width: 450px;
+          }
+        }
+      }
     }
   }
 }

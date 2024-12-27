@@ -13,6 +13,7 @@
     A. Utilities CSS
     B. Button CSS
     C. Section Title CSS
+    D. Icon Box CSS
 03. Header CSS
 04. Banner CSS
 05. Feature CSS
@@ -223,7 +224,7 @@ p {
   background-color: var(--primary);
 }
 .section-title .sub-title::after {
-  right: -35px;
+  left: calc(100% + 30px);
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -233,6 +234,21 @@ p {
   font-size: 60px;
   line-height: 68px;
   letter-spacing: -1.48px;
+}
+
+/*=============================
+	D. Icon Box CSS Start
+===============================*/
+.box-icon {
+  width: 80px;
+  height: 80px;
+  background: var(--tertiary);
+}
+.box-icon.primary {
+  background: var(--primary);
+}
+.box-icon.secondary {
+  background: var(--secondary);
 }
 
 /*=============================
@@ -588,7 +604,32 @@ p {
 /*=============================
 	05. Feature CSS start
 ===============================*/
+.feature-section .feature-content {
+  padding-left: 43px;
+}
 .feature-section .feature-content .title {
   max-width: 535px;
   margin-bottom: 60px;
+}
+.feature-section .feature-content .feature-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+.feature-section .feature-content .feature-list li {
+  gap: 30px;
+}
+.feature-section .feature-content .feature-list li .feature-info .feature-title {
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 36px;
+}
+.feature-section .feature-content .feature-list li .feature-info .desc {
+  line-height: 28px;
+  max-width: 450px;
 }

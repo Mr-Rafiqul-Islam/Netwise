@@ -1,0 +1,14 @@
+/*=============================
+	D. Icon Box CSS Start
+===============================*/
+.box-icon{
+    width: 80px;
+    height: 80px;
+    background: var(--tertiary);
+    &.primary{
+      background: var(--primary);
+    }
+    &.secondary{
+      background: var(--secondary);
+    }
+  }
