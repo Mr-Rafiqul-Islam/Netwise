@@ -2,6 +2,33 @@
 	05. Feature CSS start
 ===============================*/
 .feature-section {
+  .feature-img{
+    padding-left: 8px;
+    .img-main{
+      max-width: 482px;
+      padding-left: 35px;
+      z-index: 1;
+      &::before{
+        position: absolute;
+        content: "";
+        width: 413px;
+        height: 230px;
+        background: var(--tertiary);
+        border-radius: 20px;
+        bottom: -32px;
+        left: 0;
+        z-index: -1;
+      }
+    }
+    .img-child{
+      max-width: 331px;
+      border: 14px solid white;
+      background: white;
+      z-index: 2;
+      right: 0;
+      bottom: -80px;
+    }
+  }
   .feature-content {
     padding-left: 43px;
     .title {
