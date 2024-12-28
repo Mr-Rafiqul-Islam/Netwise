@@ -121,7 +121,9 @@
   position: fixed;
   top: 0;
   left: 0;
-
+  .mobile-topbar {
+    background: white !important;
+  }
   .navbar-main {
     background-color: white !important;
     border-radius: 0;

@@ -379,6 +379,9 @@ p {
   top: 0;
   left: 0;
 }
+.sticky-menu .mobile-topbar {
+  background: white !important;
+}
 .sticky-menu .navbar-main {
   background-color: white !important;
   border-radius: 0;
