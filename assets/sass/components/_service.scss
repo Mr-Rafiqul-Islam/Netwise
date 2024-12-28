@@ -1,0 +1,30 @@
+/*=============================
+	06. Service CSS start
+===============================*/
+
+.service-section {
+  background: url(/assets/images/service/service-bg.png) no-repeat center
+    center/cover;
+  .section-title {
+    margin-bottom: 60px;
+    .title {
+      max-width: 560px;
+    }
+  }
+
+  .service-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid var(--border-color);
+    .service-title {
+      margin-top: 60px;
+      margin-bottom: 20px;
+      font-size: 22px;
+      line-height: 36px;
+    }
+    .service-details {
+      max-width: 330px;
+    }
+  }
+}
