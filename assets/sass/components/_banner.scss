@@ -5,8 +5,16 @@
 .banner-section {
   background: white;
   padding: 117px 0 17.83px 0;
+  
   .banner-content {
+    @media screen and (max-width: 991.98px) {
+      text-align: center !important;
+    }
     .banner-title {
+      @media screen and (max-width: 991.98px) {
+        margin: 0 auto;
+        text-align: center !important;
+      }
       .title-shape {
         right: 80px;
         top: -20px;
@@ -28,9 +36,17 @@
       margin-top: 29px;
       margin-bottom: 39px;
       max-width: 463px;
+      @media screen and (max-width: 991.98px) {
+        margin: 0 auto;
+        text-align: center !important;
+      }
     }
     .banner-btn {
       gap: 50px;
+      @media screen and (max-width: 991.98px) {
+        justify-content: center;
+        margin-top: 15px;
+      }
       .play-btn {
         gap: 10px;
         line-height: 28px;

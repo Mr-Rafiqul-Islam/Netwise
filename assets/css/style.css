@@ -608,11 +608,22 @@ p {
   background: white;
   padding: 117px 0 17.83px 0;
 }
+@media screen and (max-width: 991.98px) {
+  .banner-section .banner-content {
+    text-align: center !important;
+  }
+}
 .banner-section .banner-content .banner-title {
   max-width: 541px;
   font-size: 74px;
   line-height: 84px;
   letter-spacing: -1.48px;
+}
+@media screen and (max-width: 991.98px) {
+  .banner-section .banner-content .banner-title {
+    margin: 0 auto;
+    text-align: center !important;
+  }
 }
 .banner-section .banner-content .banner-title .title-shape {
   right: 80px;
@@ -635,8 +646,22 @@ p {
   margin-bottom: 39px;
   max-width: 463px;
 }
+@media screen and (max-width: 991.98px) {
+  .banner-section .banner-content .banner-info {
+    margin: 0 auto;
+    text-align: center !important;
+  }
+}
 .banner-section .banner-content .banner-btn {
   gap: 50px;
+}
+@media screen and (max-width: 991.98px) {
+  .banner-section .banner-content .banner-btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 15px;
+  }
 }
 .banner-section .banner-content .banner-btn .play-btn {
   gap: 10px;
