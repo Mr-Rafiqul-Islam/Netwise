@@ -762,6 +762,32 @@ p {
     max-width: 394px;
   }
 }
+.service-section .arrow {
+  width: 60px;
+  height: 60px;
+  border: 5px solid var(--paragraph-color);
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  border-radius: 14px;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  cursor: pointer;
+  font-size: 24px;
+  color: var(--paragraph-color);
+  position: absolute;
+  top: -120px;
+}
+.service-section .arrow:hover {
+  border-color: var(--tertiary);
+  color: var(--tertiary);
+}
+.service-section .arrow-next {
+  right: 12px;
+}
+.service-section .arrow-prev {
+  right: 92px;
+}
 .service-section .service-card {
   background: white;
   border-radius: 20px;

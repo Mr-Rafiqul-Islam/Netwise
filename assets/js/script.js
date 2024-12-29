@@ -64,8 +64,8 @@
     slidesToScroll: 1,
     arrows: true,
     autoplay: true,
-    prevArrow: '<i class="fa-solid arrow arrow-prev fa-angle-left"></i>',
-    nextArrow: '<i class="fa-solid arrow arrow-next fa-angle-right"></i>',
+    prevArrow: '<i class="fa-solid arrow arrow-prev fa-arrow-left"></i>',
+    nextArrow: '<i class="fa-solid arrow arrow-next fa-arrow-right"></i>',
     responsive: [{
       breakpoint: 768,
       settings: {
