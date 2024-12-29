@@ -1,0 +1,41 @@
+/*=============================
+	07. Counter CSS start
+===============================*/
+
+.counter-section {
+  .section-title {
+    max-width: 1126px;
+    margin-bottom: 40px;
+    .title {
+      font-size: 74px;
+      line-height: 84px;
+    }
+  }
+  .counter-area {
+    .counter-desc {
+      margin-bottom: 68px;
+    }
+    .counter-part {
+      .counter-item {
+        background: white;
+        border-radius: 20px;
+        display: grid;
+        place-content: center;
+        padding: 40px 0;
+        width: 100%;
+        text-align: center;
+        .counter-number {
+          font-size: 60px;
+          line-height: 68px;
+          text-align: center;
+          letter-spacing: -1.48px;
+          margin-bottom: 5px;
+        }
+        
+      }
+    }
+  }
+  .img-area {
+    padding-left: 50px;
+  }
+}

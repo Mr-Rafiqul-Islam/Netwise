@@ -18,6 +18,7 @@
 04. Banner CSS
 05. Feature CSS
 06. Service CSS
+07. Counter CSS
 
 *** Template Pages ***
 =========================
@@ -814,4 +815,39 @@ p {
 }
 .service-section .service-card .service-details {
   max-width: 330px;
+}
+
+/*=============================
+	07. Counter CSS start
+===============================*/
+.counter-section .section-title {
+  max-width: 1126px;
+  margin-bottom: 40px;
+}
+.counter-section .section-title .title {
+  font-size: 74px;
+  line-height: 84px;
+}
+.counter-section .counter-area .counter-desc {
+  margin-bottom: 68px;
+}
+.counter-section .counter-area .counter-part .counter-item {
+  background: white;
+  border-radius: 20px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  padding: 40px 0;
+  width: 100%;
+  text-align: center;
+}
+.counter-section .counter-area .counter-part .counter-item .counter-number {
+  font-size: 60px;
+  line-height: 68px;
+  text-align: center;
+  letter-spacing: -1.48px;
+  margin-bottom: 5px;
+}
+.counter-section .img-area {
+  padding-left: 50px;
 }
