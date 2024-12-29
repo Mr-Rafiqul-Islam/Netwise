@@ -17,6 +17,10 @@
     border-radius: 20px;
     padding: 40px;
     border: 1px solid var(--border-color);
+    transition: var(--transition);
+    &:hover {
+      border-color: var(--black);
+    }
     .service-title {
       margin-top: 60px;
       margin-bottom: 20px;

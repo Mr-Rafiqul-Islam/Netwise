@@ -713,6 +713,11 @@ p {
   border-radius: 20px;
   padding: 40px;
   border: 1px solid var(--border-color);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.service-section .service-card:hover {
+  border-color: var(--black);
 }
 .service-section .service-card .service-title {
   margin-top: 60px;
