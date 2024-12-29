@@ -9,6 +9,9 @@
     margin-bottom: 60px;
     .title {
       max-width: 560px;
+      @media (max-width: 1199.98px) {
+        max-width: 394px;
+      }
     }
   }
 
@@ -16,6 +19,7 @@
     background: white;
     border-radius: 20px;
     padding: 40px;
+    margin: 0 12px;
     border: 1px solid var(--border-color);
     transition: var(--transition);
     &:hover {
@@ -26,6 +30,10 @@
       margin-bottom: 20px;
       font-size: 22px;
       line-height: 36px;
+      @media screen and (max-width: 1199.98px) {
+        margin-top: 30px;
+        margin-bottom: 16px;
+      }
     }
     .service-details {
       max-width: 330px;

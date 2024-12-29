@@ -136,9 +136,19 @@ p {
 .py-120 {
   padding: 120px 0;
 }
+@media screen and (max-width: 767.98px) {
+  .py-120 {
+    padding: 100px 0;
+  }
+}
 
 .pt-120 {
   padding-top: 120px;
+}
+@media screen and (max-width: 767.98px) {
+  .pt-120 {
+    padding-top: 100px;
+  }
 }
 
 .rounded-20 {
@@ -235,6 +245,18 @@ p {
   font-size: 60px;
   line-height: 68px;
   letter-spacing: -1.48px;
+}
+@media (max-width: 1199.98px) {
+  .section-title .title {
+    font-size: 42px;
+    line-height: 52px;
+  }
+}
+@media (max-width: 991.98px) {
+  .section-title .title {
+    font-size: 36px;
+    line-height: 50px;
+  }
 }
 
 /*=============================
@@ -595,6 +617,17 @@ p {
   right: 80px;
   top: -20px;
 }
+@media (max-width: 1199.98px) {
+  .banner-section .banner-content .banner-title .title-shape {
+    right: 8px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .banner-section .banner-content .banner-title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
 .banner-section .banner-content .banner-info {
   letter-spacing: -0.36px;
   margin-top: 29px;
@@ -642,6 +675,11 @@ p {
 .feature-section .feature-img {
   padding-left: 8px;
 }
+@media screen and (max-width: 1199.98px) {
+  .feature-section .feature-img {
+    padding-left: 0;
+  }
+}
 .feature-section .feature-img .img-main {
   max-width: 482px;
   padding-left: 35px;
@@ -670,8 +708,19 @@ p {
   padding-left: 53px;
   padding-top: 13px;
 }
+@media screen and (max-width: 1199.98px) {
+  .feature-section .feature-content {
+    padding-left: 0;
+    padding-top: 0;
+  }
+}
 .feature-section .feature-content .title {
   margin-bottom: 60px;
+}
+@media (max-width: 1199.98px) {
+  .feature-section .feature-content .title {
+    margin-bottom: 24px;
+  }
 }
 .feature-section .feature-content .feature-list {
   display: -webkit-box;
@@ -708,10 +757,16 @@ p {
 .service-section .section-title .title {
   max-width: 560px;
 }
+@media (max-width: 1199.98px) {
+  .service-section .section-title .title {
+    max-width: 394px;
+  }
+}
 .service-section .service-card {
   background: white;
   border-radius: 20px;
   padding: 40px;
+  margin: 0 12px;
   border: 1px solid var(--border-color);
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -724,6 +779,12 @@ p {
   margin-bottom: 20px;
   font-size: 22px;
   line-height: 36px;
+}
+@media screen and (max-width: 1199.98px) {
+  .service-section .service-card .service-title {
+    margin-top: 30px;
+    margin-bottom: 16px;
+  }
 }
 .service-section .service-card .service-details {
   max-width: 330px;

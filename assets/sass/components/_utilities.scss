@@ -14,9 +14,16 @@
 // custom padding class
 .py-120 {
   padding: 120px 0;
+  @media screen and (max-width: 767.98px) {
+    padding: 100px 0;
+    
+  }
 }
 .pt-120 {
   padding-top: 120px;
+  @media screen and (max-width: 767.98px) {
+    padding-top: 100px;
+  }
 }
 // custom radius
 .rounded-20{

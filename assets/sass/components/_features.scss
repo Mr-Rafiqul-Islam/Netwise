@@ -2,13 +2,16 @@
 	05. Feature CSS start
 ===============================*/
 .feature-section {
-  .feature-img{
+  .feature-img {
     padding-left: 8px;
-    .img-main{
+    @media screen and (max-width: 1199.98px) {
+      padding-left: 0;
+    }
+    .img-main {
       max-width: 482px;
       padding-left: 35px;
       z-index: 1;
-      &::before{
+      &::before {
         position: absolute;
         content: "";
         width: 413px;
@@ -20,7 +23,7 @@
         z-index: -1;
       }
     }
-    .img-child{
+    .img-child {
       max-width: 331px;
       border: 14px solid white;
       background: white;
@@ -32,8 +35,15 @@
   .feature-content {
     padding-left: 53px;
     padding-top: 13px;
+    @media screen and (max-width: 1199.98px) {
+      padding-left: 0;
+      padding-top: 0;
+    }
     .title {
       margin-bottom: 60px;
+      @media (max-width: 1199.98px) {
+        margin-bottom: 24px;
+      }
     }
     .feature-list {
       display: flex;

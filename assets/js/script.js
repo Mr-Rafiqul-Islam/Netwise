@@ -55,12 +55,12 @@
     });
   });
 
-  // Testimonial slider js
-  $('.client-feedback-slider').slick({
+  // Services slider js
+  $('.services-slider').slick({
     dots: false,
     infinite: true,
-    speed: 300,
-    slidesToShow: 2,
+    speed: 800,
+    slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
     autoplay: true,
