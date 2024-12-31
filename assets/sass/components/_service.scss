@@ -3,8 +3,9 @@
 ===============================*/
 
 .service-section {
-  background: url(/assets/images/service/service-bg.png) no-repeat center
-    center/cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   .section-title {
     margin-bottom: 60px;
     .title {
