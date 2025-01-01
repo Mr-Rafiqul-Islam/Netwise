@@ -19,6 +19,7 @@
 05. Feature CSS
 06. Service CSS
 07. Counter CSS
+08. Team CSS
 
 *** Template Pages ***
 =========================
@@ -884,4 +885,11 @@ p {
 }
 .counter-section .img-area {
   padding-left: 50px;
+}
+
+/*=============================
+	08. Team CSS start
+===============================*/
+.team-section .section-title {
+  margin-bottom: 60px;
 }
