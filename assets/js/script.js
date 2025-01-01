@@ -72,11 +72,18 @@
     prevArrow: '<i class="fa-solid arrow arrow-prev fa-arrow-left"></i>',
     nextArrow: '<i class="fa-solid arrow arrow-next fa-arrow-right"></i>',
     responsive: [{
-      breakpoint: 768,
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 576,
       settings: {
         slidesToShow: 1,
-      }
-    }]
+      },
+    } 
+  ]
   });
 
 })(jQuery);
