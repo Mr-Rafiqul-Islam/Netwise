@@ -824,6 +824,7 @@ p {
   border: 1px solid var(--border-color);
   -webkit-transition: var(--transition);
   transition: var(--transition);
+  height: 100% !important;
 }
 .service-section .service-card:hover {
   border-color: var(--black);
@@ -834,10 +835,16 @@ p {
   font-size: 22px;
   line-height: 36px;
 }
-@media screen and (max-width: 1199.98px) {
+@media (max-width: 1199.98px) {
   .service-section .service-card .service-title {
     margin-top: 30px;
     margin-bottom: 16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .service-section .service-card .service-title {
+    font-size: 20px;
+    line-height: 32px;
   }
 }
 .service-section .service-card .service-details {
