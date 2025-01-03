@@ -33,6 +33,11 @@
       }
       &:hover{
         background: white;
+        .social-icons{
+          a{
+          background: white;
+          color: var(--black);
+        }}
         .hover-img{
           visibility: visible;
           opacity: 1;
@@ -51,6 +56,12 @@
     position: relative;
     z-index: 99;
   }
+  .team-btn{
+    margin-top: 80px;
+    .btn-arrow-fill{
+      fill: var(--black);
+    }
+  }
 }
 .social-icons{
   gap: 10px;
@@ -65,8 +76,8 @@
     transition: var(--transition);
     border-radius: 5px;
     &:hover{
-      color: white;
-      background: var(--tertiary);  
+      color: white !important;
+      background: var(--tertiary) !important;  
     }
   }
 }
