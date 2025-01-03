@@ -86,4 +86,47 @@
   ]
   });
 
+   // Team move and active js
+	var team_item = gsap.utils.toArray('.team-card');
+	let hover_img = gsap.utils.toArray(".hover-img");
+
+	// Function to move the service image on mouse move
+	function ServiceImageMove(event, item) {
+		const contentBox = item.getBoundingClientRect();
+		const dx = (event.clientX - contentBox.x - contentBox.width / 1) / 3;
+		const dy = (event.clientY - contentBox.y - contentBox.height / 1) / 10;
+
+		hover_img.forEach((img) => {
+			gsap.to(img, {
+				x: dx,
+				y: dy,
+			});
+		});
+	}
+
+	// Add hover effect only for screens larger than 768px
+	if (window.innerWidth > 767) {
+		team_item.forEach((item, i) => {
+			item.addEventListener("mousemove", (event) => {
+				ServiceImageMove(event, item);
+			});
+
+			item.addEventListener("mouseleave", () => {
+				hover_img.forEach((img) => {
+					gsap.to(img, {
+						x: 0,
+						y: 0
+					});
+				});
+			});
+		});
+
+		// Add active team class on hover
+		$('.team-card').hover(function () {
+			$('.team-card').removeClass('active-team');
+			$(this).addClass('active-team');
+		});
+	}
+
+
 })(jQuery);

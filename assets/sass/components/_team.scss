@@ -6,4 +6,67 @@
   .section-title {
     margin-bottom: 60px;
   }
+  .team-items{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    .team-card{
+      border: 1px solid var(--border-color);
+      padding: 50px 40px;
+      transition: var(--transition);
+      .info{
+        h4{
+          margin-bottom: 10px;
+          font-size: 22px;
+          line-height: 36px;
+        }
+      }
+      .hover-img{
+        top: 50%;
+        transform: translateY(-50%) rotate(-15deg);
+        right: 78px;
+        max-width: 300px;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 9;
+        transition: var(--transition);
+      }
+      &:hover{
+        background: white;
+        .hover-img{
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+      &.active-team {
+        background: white;
+        .hover-img {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .social-icons{
+    position: relative;
+    z-index: 99;
+  }
+}
+.social-icons{
+  gap: 10px;
+  a{
+    color: var(--black);
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--border-color);
+    display: grid;
+    place-content: center;
+    font-size: 14px;
+    transition: var(--transition);
+    border-radius: 5px;
+    &:hover{
+      color: white;
+      background: var(--tertiary);  
+    }
+  }
 }

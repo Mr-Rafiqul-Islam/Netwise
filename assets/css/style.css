@@ -893,3 +893,75 @@ p {
 .team-section .section-title {
   margin-bottom: 60px;
 }
+.team-section .team-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 60px;
+}
+.team-section .team-items .team-card {
+  border: 1px solid var(--border-color);
+  padding: 50px 40px;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.team-section .team-items .team-card .info h4 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 36px;
+}
+.team-section .team-items .team-card .hover-img {
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(-15deg);
+          transform: translateY(-50%) rotate(-15deg);
+  right: 78px;
+  max-width: 300px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.team-section .team-items .team-card:hover {
+  background: white;
+}
+.team-section .team-items .team-card:hover .hover-img {
+  visibility: visible;
+  opacity: 1;
+}
+.team-section .team-items .team-card.active-team {
+  background: white;
+}
+.team-section .team-items .team-card.active-team .hover-img {
+  visibility: visible;
+  opacity: 1;
+}
+.team-section .social-icons {
+  position: relative;
+  z-index: 99;
+}
+
+.social-icons {
+  gap: 10px;
+}
+.social-icons a {
+  color: var(--black);
+  width: 35px;
+  height: 35px;
+  border: 1px solid var(--border-color);
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  font-size: 14px;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  border-radius: 5px;
+}
+.social-icons a:hover {
+  color: white;
+  background: var(--tertiary);
+}
