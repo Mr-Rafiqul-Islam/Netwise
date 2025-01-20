@@ -20,6 +20,7 @@
 06. Service CSS
 07. Counter CSS
 08. Team CSS
+09. Message CSS
 
 *** Template Pages ***
 =========================
@@ -1002,4 +1003,21 @@ p {
 .social-icons a:hover {
   color: white !important;
   background: var(--tertiary) !important;
+}
+
+/*=============================
+	01. Message CSS start
+===============================*/
+.message-section {
+  padding-bottom: 92px;
+}
+
+.message-section::before {
+  width: 1600px;
+  height: 100%;
+  background-color: white !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
 }
