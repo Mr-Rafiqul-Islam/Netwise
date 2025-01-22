@@ -1,0 +1,44 @@
+/*=============================
+   10. Newsletter Section CSS Start
+===============================*/
+.newsletter-section {
+    background-color: var(--secondary);
+    padding: 80px 0;
+    background-repeat: no-repeat;
+    background-position: top left;
+  
+    .news-text {
+      .info {
+        max-width: 270px;
+        color: var(--black);
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 40px;
+        letter-spacing: -0.64px;
+      }
+    }
+  
+    .news-form {
+      .input-group {
+        .form-field {
+          background-color: transparent;
+          border-color: var(--black);
+          height: 60px;
+  
+          &:focus {
+            border-color: var(--primary);
+          }
+        }
+  
+        .mail-icon {
+          font-size: 14px;
+          right: 28px;
+        }
+      }
+      .theme-btn-primary{
+        background-color: var(--tertiary) !important;
+        border-color: var(--tertiary) !important;
+      }
+    }
+  }
+  
