@@ -1011,7 +1011,6 @@ p {
 .message-section {
   padding-bottom: 92px;
 }
-
 .message-section::before {
   width: 1600px;
   height: 100%;
@@ -1020,4 +1019,33 @@ p {
   top: 0;
   left: 0;
   content: "";
+}
+@media (max-width: 1399.98px) {
+  .message-section::before {
+    width: 1100px;
+  }
+}
+.message-section .section-title {
+  margin-bottom: 40px;
+  position: relative;
+}
+.message-section .message-image {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  max-width: 915px;
+  height: 854px;
+}
+.message-section .message-image img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 100%;
+}
+@media (max-width: 1399.98px) {
+  .message-section .message-image {
+    max-width: 585px;
+  }
 }
