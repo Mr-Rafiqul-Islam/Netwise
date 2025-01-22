@@ -14,6 +14,7 @@
     B. Button CSS
     C. Section Title CSS
     D. Icon Box CSS
+    E. Form Input CSS
 03. Header CSS
 04. Banner CSS
 05. Feature CSS
@@ -303,6 +304,84 @@ p {
 }
 .box-icon.secondary {
   background: var(--secondary);
+}
+
+/*=============================
+	E. Form Input CSS Start
+===============================*/
+.input-group .form-label {
+  color: var(--black);
+  font-family: var(--font-Space);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.input-group .form-field {
+  height: 68px;
+  border: 1px solid var(--border-color);
+  color: var(--paragraph-color);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.36px;
+  width: 100%;
+  border-radius: 50px !important;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  padding: 0 20px;
+}
+.input-group .form-field:focus {
+  border-color: var(--primary);
+}
+.input-group .form-field::-webkit-input-placeholder {
+  color: var(--paragraph-color);
+  opacity: 1;
+}
+.input-group .form-field::-moz-placeholder {
+  color: var(--paragraph-color);
+  opacity: 1;
+}
+.input-group .form-field:-ms-input-placeholder {
+  color: var(--paragraph-color);
+  opacity: 1;
+}
+.input-group .form-field::-ms-input-placeholder {
+  color: var(--paragraph-color);
+  opacity: 1;
+}
+.input-group .form-field::placeholder {
+  color: var(--paragraph-color);
+  opacity: 1;
+}
+.input-group .textarea-control {
+  height: 130px;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 30px !important;
+  resize: none;
+}
+.input-group .textarea-control:focus {
+  outline: var(--primary) !important;
+}
+.input-group .textarea-control::-webkit-input-placeholder {
+  color: var(--paragraph-color);
+  opacity: 1;
+}
+.input-group .textarea-control::-moz-placeholder {
+  color: var(--paragraph-color);
+  opacity: 1;
+}
+.input-group .textarea-control:-ms-input-placeholder {
+  color: var(--paragraph-color);
+  opacity: 1;
+}
+.input-group .textarea-control::-ms-input-placeholder {
+  color: var(--paragraph-color);
+  opacity: 1;
+}
+.input-group .textarea-control::placeholder {
+  color: var(--paragraph-color);
+  opacity: 1;
 }
 
 /*=============================
