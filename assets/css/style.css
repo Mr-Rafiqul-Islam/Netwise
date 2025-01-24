@@ -23,6 +23,7 @@
 08. Team CSS
 09. Message CSS
 10. Newsletter CSS
+11. Testimonial CSS
 
 *** Template Pages ***
 =========================
@@ -471,10 +472,11 @@ p {
   opacity: 1;
   margin-top: 0px;
 }
-.header-section .call-to-action {
+
+.call-to-action {
   gap: 15px;
 }
-.header-section .call-to-action .icon {
+.call-to-action .icon {
   width: 55px;
   height: 55px;
   background: white;
@@ -485,16 +487,30 @@ p {
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
-.header-section .call-to-action .info p {
+.call-to-action .info p {
   letter-spacing: -0.36px;
 }
-.header-section .call-to-action .info h6 {
+.call-to-action .info h6 {
   line-height: 30px;
   font-size: 18px;
 }
-.header-section .call-to-action:hover .icon {
+.call-to-action:hover .icon {
   color: white;
   background: var(--primary);
+}
+.call-to-action.style2 .icon {
+  background: var(--tertiary);
+  color: white;
+}
+.call-to-action.style2 .info .help {
+  margin-bottom: 2px;
+}
+.call-to-action.style2 .info .number {
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.call-to-action.style2:hover .info .number {
+  color: var(--tertiary);
 }
 
 #header-fixed-height.active-height {
@@ -1162,4 +1178,17 @@ p {
 .newsletter-section .news-form .theme-btn-primary {
   background-color: var(--tertiary) !important;
   border-color: var(--tertiary) !important;
+}
+
+/*=============================
+	11. Testimonial CSS start
+===============================*/
+.testimonial-section .section-title {
+  margin-bottom: 20px;
+}
+.testimonial-section .testimonial-info {
+  padding-right: 40px;
+}
+.testimonial-section .testimonial-info .call-us {
+  margin-top: 39px;
 }
