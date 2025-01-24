@@ -161,6 +161,10 @@ p {
   border-radius: 20px !important;
 }
 
+.rounded-30 {
+  border-radius: 30px !important;
+}
+
 /*=============================
 	B. Button CSS Start
 ===============================*/
@@ -1191,4 +1195,46 @@ p {
 }
 .testimonial-section .testimonial-info .call-us {
   margin-top: 39px;
+}
+.testimonial-section .testimonial-area .testimonial-item {
+  padding: 40px 50px 35px 40px;
+  min-height: 382px;
+  height: 100%;
+}
+.testimonial-section .testimonial-area .testimonial-item .rating {
+  margin-bottom: 30px;
+}
+.testimonial-section .testimonial-area .testimonial-item .rating i {
+  font-size: 20px;
+  color: var(--secondary);
+}
+.testimonial-section .testimonial-area .testimonial-item .rating .no-rate {
+  color: var(--border-color);
+}
+.testimonial-section .testimonial-area .testimonial-item .details {
+  margin-bottom: 20px;
+}
+.testimonial-section .testimonial-area .testimonial-item .details p {
+  color: var(--paragraph-color);
+  font-family: var(--font-inter);
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: -0.36px;
+}
+.testimonial-section .testimonial-area .testimonial-item .user-info {
+  margin-top: auto;
+}
+.testimonial-section .testimonial-area .testimonial-item .user-info .user {
+  gap: 20px;
+}
+.testimonial-section .testimonial-area .testimonial-item .user-info .img {
+  width: 70px;
+  height: 70px;
+}
+.testimonial-section .testimonial-area .testimonial-item .user-info .text .name {
+  color: var(--black);
+  font-size: 22px;
+  line-height: 36px;
+  margin-bottom: 4px;
 }

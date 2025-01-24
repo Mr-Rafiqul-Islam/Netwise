@@ -85,6 +85,18 @@
     } 
   ]
   });
+  
+  // testimonial slider js
+  $('.testimonial-slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    
+  });
 
    // Team move and active js
 	var team_item = gsap.utils.toArray('.team-card');
