@@ -24,6 +24,7 @@
 09. Message CSS
 10. Newsletter CSS
 11. Testimonial CSS
+12. Project CSS
 
 *** Template Pages ***
 =========================
@@ -1237,4 +1238,47 @@ p {
   font-size: 22px;
   line-height: 36px;
   margin-bottom: 4px;
+}
+
+/*=============================
+	12. Variable CSS start
+===============================*/
+.project-section .project-item .overlay {
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.project-section .project-item .overlay p {
+  color: white;
+  background-color: var(--tertiary);
+  border-radius: 20px 20px 0 0;
+  padding: 4px 30px;
+  display: inline-block;
+}
+.project-section .project-item .overlay .title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 36px;
+  background-color: white;
+  border-radius: 0 20px 20px 20px;
+  padding: 17px 30px;
+}
+.project-section .project-item .overlay .title a {
+  color: var(--black);
+}
+.project-section .project-item .overlay .title a:hover {
+  color: var(--primary);
+}
+.project-section .project-item:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+  bottom: 0;
+}
+.project-section .project-item + .project-item {
+  margin-top: 30px;
 }
