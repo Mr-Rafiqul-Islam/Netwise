@@ -27,6 +27,7 @@
 12. Project CSS
 13. Text Slider CSS
 14. Faq Section CSS
+15. Blog Section CSS
 
 *** Template Pages ***
 =========================
@@ -1419,4 +1420,102 @@ p {
   font-weight: 300;
   line-height: 30px;
   margin-top: 5px;
+}
+
+/*=============================
+    15. Blog Section CSS Start
+===============================*/
+.blog-section .blog-item {
+  background-color: var(--body-background);
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+}
+.blog-section .blog-item .img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.blog-section .blog-item .img img {
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog-section .blog-item .text {
+  padding: 20px 40px 40px 40px;
+}
+.blog-section .blog-item .text .blog-title {
+  margin-bottom: 10px;
+}
+.blog-section .blog-item .text .blog-title a {
+  color: var(--black);
+}
+.blog-section .blog-item .text .blog-title a:hover {
+  color: var(--primary);
+}
+.blog-section .blog-item .text p {
+  margin-bottom: 30px;
+}
+.blog-section .blog-item .text .btn-arrow-fill {
+  fill: var(--black);
+}
+.blog-section .blog-item:hover .img img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.blog-section .blog-meta {
+  margin-bottom: 20px;
+}
+.blog-section .blog-meta a {
+  color: var(--paragraph-color);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: 28px;
+  letter-spacing: -0.36px;
+}
+.blog-section .blog-meta a i {
+  color: var(--primary);
+  font-size: 14px;
+  margin-right: 10px;
+}
+.blog-section .blog-meta.style2 {
+  margin-bottom: 30px;
+  white-space: nowrap;
+  bottom: 0;
+  border-radius: 5px;
+  gap: 40px;
+  padding: 5px 20px;
+}
+.blog-section .blog-meta.style2 .date {
+  color: var(--black);
+  font-size: var(--font-size);
+  font-weight: 700;
+  line-height: 30px;
+}
+.blog-section .blog-meta.style2 .date span {
+  padding-left: 10px;
+  color: var(--paragraph-color);
+  font-size: 14px;
+  font-weight: var(--font-weight);
+  line-height: 18px;
+  letter-spacing: -0.36px;
+  position: relative;
+  top: -2px;
+}
+.blog-section .blog-meta.style2 .admin {
+  color: var(--black);
+  font-size: 14px;
+  font-weight: var(--font-weight);
+  line-height: 20px;
+  letter-spacing: -0.36px;
+  position: relative;
+}
+.blog-section .blog-meta.style2 .admin::before {
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  background-color: var(--secondary);
+  top: 0;
+  left: -20px;
+  content: "";
 }
