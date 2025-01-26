@@ -15,6 +15,7 @@
     C. Section Title CSS
     D. Icon Box CSS
     E. Form Input CSS
+    F. Back To Top Btn CSS
 03. Header CSS
 04. Banner CSS
 05. Feature CSS
@@ -404,6 +405,35 @@ p {
 .input-group .textarea-control::placeholder {
   color: var(--paragraph-color);
   opacity: 1;
+}
+
+/* F. Back To Top button */
+.scroll-to-top {
+  background: var(--tertiary);
+  width: 40px;
+  height: 40px;
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  bottom: -45px;
+  right: 24px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 15px;
+  z-index: 99;
+  cursor: pointer;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.scroll-to-top:hover {
+  background-color: var(--primary);
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  bottom: 24px;
 }
 
 /*=============================

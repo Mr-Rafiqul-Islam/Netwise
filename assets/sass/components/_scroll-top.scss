@@ -1,0 +1,26 @@
+/* F. Back To Top button */
+.scroll-to-top {
+    background: var(--tertiary);
+    width: 40px;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    bottom: -45px;
+    right: 24px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 15px;
+    z-index: 99;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  .scroll-to-top:hover {
+    background-color: var(--primary);
+  }
+  
+  .scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    bottom: 24px;
+  }

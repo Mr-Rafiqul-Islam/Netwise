@@ -139,6 +139,28 @@
 			$(this).addClass('active-team');
 		});
 	}
+  // Back to top js
+	let btn = $(".scroll-to-top");
 
+	$(window).on('scroll', function () {
+		btn.toggleClass("show", $(window).scrollTop() > 300);
+	});
+
+	btn.click(function (e) {
+		e.preventDefault();
+		if (navigator.userAgent.toLowerCase().indexOf("firefox") > -1) {
+			$("html").animate({
+					scrollTop: 0,
+				},
+				1000
+			);
+		} else {
+			$("html, body").animate({
+					scrollTop: 0,
+				},
+				0
+			);
+		}
+	});
 
 })(jQuery);
