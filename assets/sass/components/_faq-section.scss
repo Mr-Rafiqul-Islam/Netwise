@@ -1,0 +1,83 @@
+/*=============================
+	14. Faq Section CSS start
+===============================*/
+.faq-section {
+    .faq-body {
+      .accordion-button {
+        &:focus {
+          box-shadow: none;
+        }
+  
+        &::after {
+          background-image: url(../images/icon/plus-solid.svg);
+          transition: none;
+          background-position: 0 0;
+        }
+  
+        &:not(.collapsed)::after {
+          background-image: url(../images/icon/dash-lg.svg);
+          background-position: 0 8px;
+        }
+  
+        &:not(.collapsed) {
+          background-color: transparent;
+          box-shadow: none;
+        }
+  
+        color: var(--black);
+        font-size: var(--font-size);
+        font-weight: 700;
+        line-height: 30px;
+        border-radius: 120px !important;
+        padding: 23px 30px;
+      }
+  
+      .accordion-item {
+        border: 0;
+        margin: 10px 0;
+        background-color: var(--body-background);
+        border-radius: 30px;
+  
+        & + .accordion-item {
+          margin-top: 30px;
+        }
+      }
+  
+      .accordion-body {
+        padding: 0 30px 30px 30px;
+      }
+    }
+  
+    .faq-images {
+      padding-left: 50px;
+  
+      .clients {
+        height: 100%;
+        background-color: var(--secondary);
+        padding: 20px;
+  
+        .client-number {
+          color: var(--black);
+          font-family: var(--font-Space);
+          font-size: 60px;
+          font-weight: 700;
+          line-height: 68px;
+          letter-spacing: -1.48px;
+  
+          .odometer {
+            font-weight: 700;
+          }
+        }
+  
+        .trust {
+          color: var(--black);
+          font-family: var(--font-Space);
+          font-size: var(--font-size);
+          font-weight: 300;
+          line-height: 30px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+  

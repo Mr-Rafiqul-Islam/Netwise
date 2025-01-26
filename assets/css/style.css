@@ -26,6 +26,7 @@
 11. Testimonial CSS
 12. Project CSS
 13. Text Slider CSS
+14. Faq Section CSS
 
 *** Template Pages ***
 =========================
@@ -173,6 +174,10 @@ p {
 
 .mb-60 {
   margin-bottom: 60px !important;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
 }
 
 /*=============================
@@ -1345,4 +1350,73 @@ p {
     -webkit-transform: translateX(calc(-100% - 2.6rem));
             transform: translateX(calc(-100% - 2.6rem));
   }
+}
+/*=============================
+	14. Faq Section CSS start
+===============================*/
+.faq-section .faq-body .accordion-button {
+  color: var(--black);
+  font-size: var(--font-size);
+  font-weight: 700;
+  line-height: 30px;
+  border-radius: 120px !important;
+  padding: 23px 30px;
+}
+.faq-section .faq-body .accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.faq-section .faq-body .accordion-button::after {
+  background-image: url(../images/icon/plus-solid.svg);
+  -webkit-transition: none;
+  transition: none;
+  background-position: 0 0;
+}
+.faq-section .faq-body .accordion-button:not(.collapsed)::after {
+  background-image: url(../images/icon/dash-lg.svg);
+  background-position: 0 8px;
+}
+.faq-section .faq-body .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.faq-section .faq-body .accordion-item {
+  border: 0;
+  margin: 10px 0;
+  background-color: var(--body-background);
+  border-radius: 30px;
+}
+.faq-section .faq-body .accordion-item + .accordion-item {
+  margin-top: 30px;
+}
+.faq-section .faq-body .accordion-body {
+  padding: 0 30px 30px 30px;
+}
+.faq-section .faq-images {
+  padding-left: 50px;
+}
+.faq-section .faq-images .clients {
+  height: 100%;
+  background-color: var(--secondary);
+  padding: 20px;
+}
+.faq-section .faq-images .clients .client-number {
+  color: var(--black);
+  font-family: var(--font-Space);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 68px;
+  letter-spacing: -1.48px;
+}
+.faq-section .faq-images .clients .client-number .odometer {
+  font-weight: 700;
+}
+.faq-section .faq-images .clients .trust {
+  color: var(--black);
+  font-family: var(--font-Space);
+  font-size: var(--font-size);
+  font-weight: 300;
+  line-height: 30px;
+  margin-top: 5px;
 }
