@@ -25,6 +25,7 @@
 10. Newsletter CSS
 11. Testimonial CSS
 12. Project CSS
+13. Text Slider CSS
 
 *** Template Pages ***
 =========================
@@ -164,6 +165,14 @@ p {
 
 .rounded-30 {
   border-radius: 30px !important;
+}
+
+.mb-40 {
+  margin-bottom: 40px !important;
+}
+
+.mb-60 {
+  margin-bottom: 60px !important;
 }
 
 /*=============================
@@ -1281,4 +1290,59 @@ p {
 }
 .project-section .project-item + .project-item {
   margin-top: 30px;
+}
+
+/*=============================
+	13. Text Slider CSS start
+===============================*/
+.text-slider-section .slider-main {
+  border-top: 2px solid var(--tertiary);
+  border-bottom: 2px solid var(--tertiary);
+  padding: 30px 0;
+  gap: 40px;
+}
+.text-slider-section .slider-main .slider-item {
+  white-space: nowrap;
+  -webkit-animation: scroll2 18s linear infinite;
+          animation: scroll2 18s linear infinite;
+  gap: 40px;
+}
+.text-slider-section .slider-main .slider-item .title {
+  color: var(--black);
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 68px;
+  letter-spacing: -1.48px;
+}
+.text-slider-section .slider-main .slider-item .title img {
+  margin-right: 22px;
+}
+.text-slider-section .slider-main .slider-item .title:nth-child(even) {
+  opacity: 0.7;
+}
+.text-slider-section .slider-main:hover .slider-item {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes scroll2 {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(calc(-100% - 2.6rem));
+            transform: translateX(calc(-100% - 2.6rem));
+  }
+}
+
+@keyframes scroll2 {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(calc(-100% - 2.6rem));
+            transform: translateX(calc(-100% - 2.6rem));
+  }
 }

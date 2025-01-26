@@ -16,7 +16,6 @@
   padding: 120px 0;
   @media screen and (max-width: 767.98px) {
     padding: 100px 0;
-    
   }
 }
 .pt-120 {
@@ -26,9 +25,16 @@
   }
 }
 // custom radius
-.rounded-20{
-    border-radius: 20px !important;
+.rounded-20 {
+  border-radius: 20px !important;
 }
-.rounded-30{
-    border-radius: 30px !important;
+.rounded-30 {
+  border-radius: 30px !important;
+}
+// custom margin
+.mb-40 {
+  margin-bottom: 40px !important;
+}
+.mb-60 {
+  margin-bottom: 60px !important;
 }
