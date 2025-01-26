@@ -68,7 +68,7 @@
     &:hover{
       color: white;
       .btn-arrow .btn-arrow-fill{
-        fill: white;
+        fill: white !important;
       }
       &::before{
         transform: scale(1);

@@ -254,7 +254,7 @@ p {
   color: white;
 }
 .theme-btn-border:hover .btn-arrow .btn-arrow-fill {
-  fill: white;
+  fill: white !important;
 }
 .theme-btn-border:hover::before {
   -webkit-transform: scale(1);
