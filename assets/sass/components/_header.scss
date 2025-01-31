@@ -173,7 +173,8 @@
   }
 }
 
-/* header section two */
+
+/* =======header section two====== */
 .header-section-two {
   background: var(--bg-one);
   &::before{
@@ -186,11 +187,20 @@
     height: 100%;
     background-color: var(--tertiary);
     z-index: 0;
+    @media (max-width: 1803.98px) {
+      max-width: 550px;
+    }
     @media (max-width: 1699.98px) {
       max-width: 450px;
     }
+    @media (max-width: 1508.98px) {
+      max-width: 400px;
+    }
     @media (max-width: 1399.98px) {
       max-width: 330px;
+    }
+    @media (max-width: 1269.98px) {
+      max-width: 300px;
     }
     @media (max-width: 1199.98px) {
       display: none;
@@ -200,13 +210,11 @@
     background: transparent;
     border-radius: 0;
     padding: 11px 0;
+    .navbar-brand{
+      margin-right: 0;
+    }
   }
   .call-to-action {
-    margin-left: 72px;
-
-    @media (max-width:1399.98px) {
-      margin-left: 42px;
-    }
     .icon {
       background-color: var(--secondary);
       color: var(--black);
