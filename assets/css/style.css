@@ -447,7 +447,8 @@ p {
   z-index: 999;
   width: 100%;
 }
-.header-section .navbar {
+
+.navbar {
   padding: 0;
 }
 
@@ -635,7 +636,7 @@ p {
 .header-section-two .navbar-main {
   background: transparent;
   border-radius: 0;
-  padding: 3px 0;
+  padding: 11px 0;
 }
 .header-section-two .call-to-action {
   margin-left: 72px;
