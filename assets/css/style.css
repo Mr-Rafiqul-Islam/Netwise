@@ -941,30 +941,66 @@ p {
 
 .banner-section-two {
   background: var(--black);
+  padding: 72px 0;
 }
 .banner-section-two .banner-content {
   padding-right: 64px;
 }
 .banner-section-two .banner-content .banner-title {
   color: #fff;
-  -webkit-font-feature-settings: "liga" off, "clig" off;
-          font-feature-settings: "liga" off, "clig" off;
-  font-size: 92.035px;
+  font-size: 92px;
   line-height: 100px; /* 108.655% */
   letter-spacing: -1.841px;
   text-transform: capitalize;
 }
 .banner-section-two .banner-content .banner-info {
   color: white;
-  /* Body/M */
-  font-family: Inter;
-  font-size: 18px;
+  font-family: var(--font-inter);
   line-height: 28px; /* 155.556% */
-  letter-spacing: -0.36px;
   margin-top: 28.5px;
   margin-bottom: 30px;
 }
+.banner-section-two .banner-content .play-video {
+  width: 203px;
+  height: 203px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+}
+.banner-section-two .banner-content .play-video img {
+  -webkit-animation: spin 26s infinite linear;
+          animation: spin 26s infinite linear;
+}
+.banner-section-two .banner-content .play-video .icon {
+  width: 90px;
+  height: 90px;
+  background: var(--primary);
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  font-size: 25px;
+}
 
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 /*=============================
 	05. Feature CSS start
 ===============================*/
