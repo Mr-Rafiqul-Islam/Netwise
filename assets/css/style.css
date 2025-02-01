@@ -939,6 +939,32 @@ p {
   right: -220px;
 }
 
+.banner-section-two {
+  background: var(--black);
+}
+.banner-section-two .banner-content {
+  padding-right: 64px;
+}
+.banner-section-two .banner-content .banner-title {
+  color: #fff;
+  -webkit-font-feature-settings: "liga" off, "clig" off;
+          font-feature-settings: "liga" off, "clig" off;
+  font-size: 92.035px;
+  line-height: 100px; /* 108.655% */
+  letter-spacing: -1.841px;
+  text-transform: capitalize;
+}
+.banner-section-two .banner-content .banner-info {
+  color: white;
+  /* Body/M */
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 28px; /* 155.556% */
+  letter-spacing: -0.36px;
+  margin-top: 28.5px;
+  margin-bottom: 30px;
+}
+
 /*=============================
 	05. Feature CSS start
 ===============================*/

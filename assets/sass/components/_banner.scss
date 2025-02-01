@@ -2,10 +2,11 @@
 	03. Banner CSS start
 ===============================*/
 
+// banner one start
 .banner-section {
   background: white;
   padding: 117px 0 17.83px 0;
-  
+
   .banner-content {
     @media screen and (max-width: 991.98px) {
       text-align: center !important;
@@ -79,5 +80,31 @@
     filter: blur(152.6000061035px);
     bottom: -176px;
     right: -220px;
+  }
+}
+
+// banner two start
+.banner-section-two {
+  background: var(--black);
+  .banner-content {
+    padding-right: 64px;
+    .banner-title {
+      color: #fff;
+      font-feature-settings: "liga" off, "clig" off;
+      font-size: 92.035px;
+      line-height: 100px; /* 108.655% */
+      letter-spacing: -1.841px;
+      text-transform: capitalize;
+    }
+    .banner-info {
+      color: white;
+      /* Body/M */
+      font-family: Inter;
+      font-size: 18px;
+      line-height: 28px; /* 155.556% */
+      letter-spacing: -0.36px;
+      margin-top: 28.5px;
+      margin-bottom: 30px;
+    }
   }
 }
