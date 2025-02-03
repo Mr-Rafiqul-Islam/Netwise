@@ -85,8 +85,19 @@
 
 // banner two start
 .banner-section-two {
-  background: var(--black);
+  background: white;
   padding: 72px 0;
+  &::before{
+    position: absolute;
+    width: 62%;
+    height: 100%;
+    top:0;
+    left: 0;
+    content: "";
+    background: var(--black);
+    clip-path: polygon(0 0, 74% 0, 100% 100%, 0% 100%);
+
+  }
   .banner-content {
     padding-right: 64px;
     .banner-title {
@@ -120,6 +131,9 @@
         font-size: 25px;
       }
     }
+  }
+  .banner-img{
+    transform: translateX(57px);
   }
 }
 @keyframes spin {

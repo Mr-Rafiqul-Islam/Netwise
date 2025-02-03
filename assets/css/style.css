@@ -940,8 +940,18 @@ p {
 }
 
 .banner-section-two {
-  background: var(--black);
+  background: white;
   padding: 72px 0;
+}
+.banner-section-two::before {
+  position: absolute;
+  width: 62%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: "";
+  background: var(--black);
+  clip-path: polygon(0 0, 74% 0, 100% 100%, 0% 100%);
 }
 .banner-section-two .banner-content {
   padding-right: 64px;
@@ -978,6 +988,10 @@ p {
   display: grid;
   place-content: center;
   font-size: 25px;
+}
+.banner-section-two .banner-img {
+  -webkit-transform: translateX(57px);
+          transform: translateX(57px);
 }
 
 @-webkit-keyframes spin {
