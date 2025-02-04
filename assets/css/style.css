@@ -1878,6 +1878,30 @@ p {
 .about-section .about-img .img-main {
   max-width: 526px;
 }
+.about-section .about-img .img-main .about-shape {
+  right: -24px;
+  top: 24px;
+  -webkit-animation: spin 26s infinite linear;
+          animation: spin 26s infinite linear;
+}
+.about-section .about-img .clients {
+  background-color: white;
+  padding: 19px 30px;
+  bottom: 100px;
+  right: 15px;
+  gap: 20px;
+}
+.about-section .about-img .clients .counter-info .number {
+  font-family: var(--font-Space);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -0.64px;
+  color: var(--black);
+}
+.about-section .about-img .box-icon img {
+  width: 46px;
+}
 .about-section .about-content .list-box .list-wrapper .list-info li {
   text-wrap: nowrap;
   margin-bottom: 10px;

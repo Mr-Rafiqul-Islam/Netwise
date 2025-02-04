@@ -5,6 +5,33 @@
   .about-img {
     .img-main {
       max-width: 526px;
+      .about-shape {
+        right: -24px;
+        top: 24px;
+        animation: spin 26s infinite linear;
+      }
+    }
+    .clients {
+      background-color: white;
+      padding: 19px 30px;
+      bottom: 100px;
+      right: 15px;
+      gap: 20px;
+      .counter-info {
+        .number {
+          font-family: var(--font-Space);
+          font-size: 32px;
+          font-weight: 500;
+          line-height: 40px;
+          letter-spacing: -0.64px;
+          color: var(--black);
+        }
+      }
+    }
+    .box-icon {
+      img {
+        width: 46px;
+      }
     }
   }
   .about-content {
@@ -28,8 +55,8 @@
         }
       }
     }
-    .btn-arrow-fill{
-        fill: var(--black);
-      }
+    .btn-arrow-fill {
+      fill: var(--black);
+    }
   }
 }
