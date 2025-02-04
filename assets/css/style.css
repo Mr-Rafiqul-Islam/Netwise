@@ -993,6 +993,10 @@ p {
   -webkit-transform: translateX(57px);
           transform: translateX(57px);
 }
+.banner-section-two .banner-object {
+  right: -25px;
+  top: -75px;
+}
 
 @-webkit-keyframes spin {
   from {
