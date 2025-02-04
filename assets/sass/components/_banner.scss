@@ -87,16 +87,16 @@
 .banner-section-two {
   background: white;
   padding: 72px 0;
-  &::before{
+  &::before {
     position: absolute;
+    z-index: -1;
     width: 62%;
     height: 100%;
-    top:0;
+    top: 0;
     left: 0;
     content: "";
     background: var(--black);
     clip-path: polygon(0 0, 74% 0, 100% 100%, 0% 100%);
-
   }
   .banner-content {
     padding-right: 64px;
@@ -114,15 +114,15 @@
       margin-top: 28.5px;
       margin-bottom: 30px;
     }
-    .play-video{
+    .play-video {
       width: 203px;
       height: 203px;
       border-radius: 50%;
-      background: rgba(255,255,255,0.05);
-      img{
+      background: rgba(255, 255, 255, 0.05);
+      img {
         animation: spin 26s infinite linear;
       }
-      .icon{
+      .icon {
         width: 90px;
         height: 90px;
         background: var(--primary);
@@ -132,19 +132,31 @@
       }
     }
   }
-  .banner-img{
+  .banner-img {
     transform: translateX(57px);
   }
-  .banner-object{
+  .banner-shapes {
+    .shape-1 {
+      left: 50px;
+      top: -125px;
+      // transform: rotate(3deg);
+    }
+    .shape-2 {
+      left: -18px;
+      bottom: 155px;
+      // transform: rotate(-3deg);
+    }
+  }
+  .banner-object {
     right: -25px;
     top: -75px;
   }
 }
 @keyframes spin {
-  from{
+  from {
     transform: rotate(0deg);
   }
-  to{
+  to {
     transform: rotate(360deg);
   }
 }

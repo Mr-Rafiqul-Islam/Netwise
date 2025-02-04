@@ -945,6 +945,7 @@ p {
 }
 .banner-section-two::before {
   position: absolute;
+  z-index: -1;
   width: 62%;
   height: 100%;
   top: 0;
@@ -992,6 +993,14 @@ p {
 .banner-section-two .banner-img {
   -webkit-transform: translateX(57px);
           transform: translateX(57px);
+}
+.banner-section-two .banner-shapes .shape-1 {
+  left: 50px;
+  top: -125px;
+}
+.banner-section-two .banner-shapes .shape-2 {
+  left: -18px;
+  bottom: 155px;
 }
 .banner-section-two .banner-object {
   right: -25px;
