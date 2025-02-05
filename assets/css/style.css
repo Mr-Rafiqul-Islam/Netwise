@@ -1184,6 +1184,24 @@ p {
   max-width: 330px;
 }
 
+.service-section-two {
+  overflow: hidden;
+  position: relative;
+}
+.service-section-two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 1760px;
+  height: 100%;
+  background: white;
+  border-radius: 30px;
+  z-index: -1;
+}
+
 /*=============================
 	07. Counter CSS start
 ===============================*/

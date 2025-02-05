@@ -2,6 +2,8 @@
 	06. Service CSS start
 ===============================*/
 
+
+// service section one
 .service-section {
   background-size: cover;
   background-position: center;
@@ -67,5 +69,23 @@
     .service-details {
       max-width: 330px;
     }
+  }
+}
+
+// sertvice section two 
+.service-section-two{
+  overflow: hidden;
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1760px;
+    height: 100%;
+    background: white;
+    border-radius: 30px;
+    z-index: -1;
   }
 }
