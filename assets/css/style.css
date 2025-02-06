@@ -201,6 +201,8 @@ p {
 }
 .theme-btn .btn-arrow .btn-arrow-fill {
   fill: white;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
 }
 
 .theme-btn-primary {
@@ -251,6 +253,9 @@ p {
   z-index: -1;
   -webkit-transition: var(--transition);
   transition: var(--transition);
+}
+.theme-btn-border .btn-arrow-fill {
+  fill: var(--black) !important;
 }
 .theme-btn-border:hover {
   color: white;
@@ -1201,8 +1206,42 @@ p {
   border-radius: 30px;
   z-index: -1;
 }
+.service-section-two .service-card {
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  border-bottom: 3px solid transparent;
+  margin: 0 15px;
+}
+.service-section-two .service-card:hover {
+  border-color: var(--tertiary);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.service-section-two .service-card:hover .img img {
+  scale: 1.1;
+}
+.service-section-two .service-card .img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.service-section-two .service-card .img img {
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
 .service-section-two .service-card .box-icon {
   background: var(--bg-one) !important;
+  bottom: -40px;
+}
+.service-section-two .service-card .service-text {
+  padding: 60px 40px 40px 40px;
+}
+.service-section-two .service-card .service-text .service-title {
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-style: normal;
+  line-height: 36px; /* 163.636% */
 }
 
 /*=============================

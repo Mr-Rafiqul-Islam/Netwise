@@ -15,6 +15,7 @@
       margin-left: 10px;
       .btn-arrow-fill {
         fill: white;
+        transition: var(--transition);
       }
     }
   }
@@ -64,6 +65,9 @@
       background: var(--primary);
       z-index: -1;
       transition: var(--transition);
+    }
+    .btn-arrow-fill {
+      fill: var(--black) !important;
     }
     &:hover{
       color: white;
