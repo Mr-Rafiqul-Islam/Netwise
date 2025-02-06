@@ -88,4 +88,10 @@
     border-radius: 30px;
     z-index: -1;
   }
+  .service-card{
+    // position: relative;
+    .box-icon{
+      background: var(--bg-one) !important;
+    }
+  }
 }

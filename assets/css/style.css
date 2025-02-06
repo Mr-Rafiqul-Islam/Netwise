@@ -1201,6 +1201,9 @@ p {
   border-radius: 30px;
   z-index: -1;
 }
+.service-section-two .service-card .box-icon {
+  background: var(--bg-one) !important;
+}
 
 /*=============================
 	07. Counter CSS start
