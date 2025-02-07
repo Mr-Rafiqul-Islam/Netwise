@@ -183,6 +183,10 @@ p {
   margin-bottom: 30px !important;
 }
 
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
 /*=============================
 	B. Button CSS Start
 ===============================*/
@@ -2016,4 +2020,45 @@ p {
 }
 .about-section .about-content .btn-arrow-fill {
   fill: var(--black);
+}
+
+.who-section .content-area .desc {
+  margin-bottom: 20px;
+  max-width: 490px;
+}
+@media (max-width: 1199.98px) {
+  .who-section .content-area .desc {
+    max-width: 100%;
+  }
+}
+.who-section .img-area {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.who-section .img-area .conter-part {
+  background: var(--secondary);
+  padding: 38px;
+}
+.who-section .img-area .conter-part .count {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 68px; /* 113.333% */
+  letter-spacing: -1.48px;
+}
+.who-section .img-area .conter-part h6 {
+  font-size: 18px;
+  line-height: 30px; /* 166.667% */
+}
+.who-section .img-area .conter-part .icon-box {
+  background: var(--tertiary);
+}
+.who-section .img-area .img-part img {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.icon-box {
+  width: 120px;
+  height: 120px;
 }
