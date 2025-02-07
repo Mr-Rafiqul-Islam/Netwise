@@ -1239,6 +1239,10 @@ p {
   font-size: 0;
   border: 0;
 }
+.service-section-two .services-slider-two .slick-list {
+  padding: 20px 0;
+  margin: -20px 0;
+}
 .service-section-two .service-card {
   -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
