@@ -59,6 +59,7 @@
   --transition: all linear 0.3s;
   --body-background: #ffffff;
   --border-color: #cccccc;
+  --rgba-blue: rgba(0, 67, 235, 0.8);
   --linear-gradient: linear-gradient(
     180deg,
     rgba(14, 43, 197, 0) 0%,
@@ -1603,7 +1604,7 @@ p {
 }
 
 /*=============================
-	12. Variable CSS start
+	12. Project CSS start
 ===============================*/
 .project-section .project-item .overlay {
   bottom: -20px;
@@ -1643,6 +1644,48 @@ p {
 }
 .project-section .project-item + .project-item {
   margin-top: 30px;
+}
+
+.project-section-two .project-main .project-item {
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.project-section-two .project-main .project-item:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+  bottom: 0;
+}
+.project-section-two .project-main .project-item .overlay {
+  bottom: -20px;
+  visibility: hidden;
+  opacity: 0;
+  padding: 20px;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.project-section-two .project-main .project-item .overlay .project-info {
+  background: var(--rgba-blue);
+}
+.project-section-two .project-main .project-item .overlay .project-info .project-title {
+  text-align: center;
+  font-size: 22px;
+  line-height: 36px; /* 163.636% */
+  margin-bottom: 10px;
+}
+.project-section-two .project-main .project-item .overlay .project-info p {
+  text-align: center;
+  font-family: var(--font-inter);
+  line-height: 28px; /* 155.556% */
+}
+.project-section-two .project-main .project-item .overlay .project-info .box-icon {
+  margin-top: 65px;
+  width: 73px !important;
+  height: 73px !important;
+  color: var(--black);
+  font-size: 24px;
+}
+.project-section-two .project-main .project-item .overlay .project-info .box-icon:hover {
+  background: white;
 }
 
 /*=============================

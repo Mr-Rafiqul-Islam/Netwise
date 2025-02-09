@@ -1,43 +1,62 @@
 /*=============================
-	12. Variable CSS start
+	12. Project CSS start
 ===============================*/
 .project-section {
-    .project-item {
-      .overlay {
-        bottom: -20px;
-        left: 0;
-        width: 100%;
-        padding: 30px;
-        visibility: hidden;
-        opacity: 0;
-        transition: var(--transition);
-  
-        p {
-          color: white;
-          background-color: var(--tertiary);
-          border-radius: 20px 20px 0 0;
-          padding: 4px 30px;
-          display: inline-block;
-        }
-  
-        .title {
-          font-size: 22px;
-          font-weight: 700;
-          line-height: 36px;
-          background-color: white;
-          border-radius: 0 20px 20px 20px;
-          padding: 17px 30px;
-  
-          a {
-            color: var(--black);
-  
-            &:hover {
-              color: var(--primary);
-            }
+  .project-item {
+    .overlay {
+      bottom: -20px;
+      left: 0;
+      width: 100%;
+      padding: 30px;
+      visibility: hidden;
+      opacity: 0;
+      transition: var(--transition);
+
+      p {
+        color: white;
+        background-color: var(--tertiary);
+        border-radius: 20px 20px 0 0;
+        padding: 4px 30px;
+        display: inline-block;
+      }
+
+      .title {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 36px;
+        background-color: white;
+        border-radius: 0 20px 20px 20px;
+        padding: 17px 30px;
+
+        a {
+          color: var(--black);
+
+          &:hover {
+            color: var(--primary);
           }
         }
       }
-  
+    }
+
+    &:hover {
+      .overlay {
+        visibility: visible;
+        opacity: 1;
+        bottom: 0;
+      }
+    }
+
+    & + .project-item {
+      margin-top: 30px;
+    }
+  }
+}
+
+// project section two
+.project-section-two {
+  .project-main {
+    .project-item {
+      transition: var(--transition);
       &:hover {
         .overlay {
           visibility: visible;
@@ -45,10 +64,37 @@
           bottom: 0;
         }
       }
-  
-      & + .project-item {
-        margin-top: 30px;
+      .overlay {
+        bottom: -20px;
+        visibility: hidden;
+        opacity: 0;
+        padding: 20px;
+        transition: var(--transition);
+        .project-info {
+          background: var(--rgba-blue);
+          .project-title {
+            text-align: center;
+            font-size: 22px;
+            line-height: 36px; /* 163.636% */
+            margin-bottom: 10px;
+          }
+          p {
+            text-align: center;
+            font-family: var(--font-inter);
+            line-height: 28px; /* 155.556% */
+          }
+          .box-icon{
+            margin-top: 65px;
+            width: 73px !important;
+            height: 73px  !important;
+            color: var(--black);
+            font-size: 24px;
+            &:hover{
+              background: white;
+            }
+          }
+        }
       }
     }
   }
-  
+}
