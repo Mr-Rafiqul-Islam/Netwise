@@ -1455,6 +1455,46 @@ p {
 .team-section-two .team-desc {
   margin-bottom: 39px;
 }
+.team-section-two .all-team-card .team-card:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+.team-section-two .all-team-card .team-card .img {
+  border-radius: 20px;
+}
+.team-section-two .all-team-card .team-card .overlay {
+  background: var(--linear-gradient);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.team-section-two .all-team-card .team-card .overlay .member-info {
+  bottom: 40px;
+}
+.team-section-two .all-team-card .team-card .overlay .member-info .member-title {
+  margin-bottom: 5px;
+  font-size: 22px;
+  line-height: 36px; /* 163.636% */
+}
+.team-section-two .all-team-card .team-card .overlay .member-info .member-position {
+  font-family: var(--font-inter);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  letter-spacing: -0.36px;
+}
+.team-section-two .all-team-card .team-card .overlay .social-icons {
+  margin-top: 20px;
+}
+.team-section-two .all-team-card .team-card .overlay .social-icons a {
+  background: white;
+}
+.team-section-two .all-team-card .team-card .overlay .social-icons a:hover {
+  background: var(--secondary) !important;
+  color: var(--black) !important;
+}
+
 /*=============================
 	01. Message CSS start
 ===============================*/
