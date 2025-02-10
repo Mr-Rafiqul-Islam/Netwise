@@ -96,7 +96,13 @@
       &:hover{
         .overlay{
           visibility: visible;
-        opacity: 1;
+          opacity: 1;
+          .social-icons{
+            a{
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
         }
       }
       .img {
@@ -125,8 +131,24 @@
         .social-icons {
           margin-top: 20px;
           a {
+            opacity: 0;
+            transform: translateY(15px);
+            transition: var(--transition);
             background: white;
+            &:first-child{
+              transition-delay: 0.2s;
+            }
+            &:nth-child(2){
+              transition-delay: 0.3s;
+            }
+            &:nth-child(3){
+              transition-delay: 0.4s;
+            }
+            &:nth-child(4){
+              transition-delay: 0.5s;
+            }
             &:hover {
+              transition-delay: 0s !important;
               background: var(--secondary) !important;
               color: var(--black) !important;
             }

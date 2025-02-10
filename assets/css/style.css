@@ -1459,6 +1459,11 @@ p {
   visibility: visible;
   opacity: 1;
 }
+.team-section-two .all-team-card .team-card:hover .overlay .social-icons a {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
 .team-section-two .all-team-card .team-card .img {
   border-radius: 20px;
 }
@@ -1488,9 +1493,32 @@ p {
   margin-top: 20px;
 }
 .team-section-two .all-team-card .team-card .overlay .social-icons a {
+  opacity: 0;
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
   background: white;
 }
+.team-section-two .all-team-card .team-card .overlay .social-icons a:first-child {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+.team-section-two .all-team-card .team-card .overlay .social-icons a:nth-child(2) {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+.team-section-two .all-team-card .team-card .overlay .social-icons a:nth-child(3) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+.team-section-two .all-team-card .team-card .overlay .social-icons a:nth-child(4) {
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+}
 .team-section-two .all-team-card .team-card .overlay .social-icons a:hover {
+  -webkit-transition-delay: 0s !important;
+          transition-delay: 0s !important;
   background: var(--secondary) !important;
   color: var(--black) !important;
 }
