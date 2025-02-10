@@ -1,22 +1,23 @@
 (function ($) {
-  "use strict";
+  ("use strict");
 
-  //project horizontal scroll js
-  let horizontalSection = document.querySelector(".horizontal-scroll");
-  if (horizontalSection) {
-    gsap.to(".horizontal-scroll", {
-      x: () => horizontalSection.scrollWidth * -1,
-      xPercent: 100,
-      scrollTrigger: {
-        trigger: ".horizontal-scroll",
-        start: "top 40%",
-        end: "+=2000px",
-        pin: ".project-section-two",
-        scrub: 1.4,
-        invalidateOnRefresh: true,
-      },
-    });
-  }
+  document.addEventListener("DOMContentLoaded", function () {
+    let horizontalSection = document.querySelector('.horizontal-scroll');
+    if (horizontalSection) {
+      gsap.to('.horizontal-scroll', {
+        x: () => horizontalSection.scrollWidth * -1,
+        xPercent: 100,
+        scrollTrigger: {
+          trigger: '.horizontal-scroll',
+          start: 'top 40%',
+          end: '+=2000px',
+          pin: '.project-section-two',
+          scrub: 1.4,
+          invalidateOnRefresh: true
+        }
+      });
+    }
+  });
   // fixed menu js
   $(window).on("scroll", function () {
     let scroll = $(window).scrollTop();
