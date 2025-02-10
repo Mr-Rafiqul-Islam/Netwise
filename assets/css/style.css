@@ -1449,6 +1449,12 @@ p {
   background: var(--tertiary) !important;
 }
 
+.team-section-two .section-title {
+  margin-bottom: 34px;
+}
+.team-section-two .team-desc {
+  margin-bottom: 39px;
+}
 /*=============================
 	01. Message CSS start
 ===============================*/
