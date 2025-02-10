@@ -1,0 +1,78 @@
+/*
+========================
+ Pricing Section Started
+ ========================
+ */
+
+.pricing-section {
+  .main-pricing {
+    --bs-gutter-x: 30px;
+    --bs-gutter-y: 30px;
+    .pricing-card {
+      padding: 40px;
+      &:hover {
+        .lower-content {
+          button {
+            background: var(--primary);
+            color: white;
+          }
+        }
+      }
+      .upper-content {
+        margin-bottom: 40px;
+        gap: 34px;
+        .title {
+          margin-bottom: 20px;
+          font-size: 32px;
+          font-weight: 500 !important;
+          line-height: 40px; /* 125% */
+          letter-spacing: -0.64px;
+          text-wrap: nowrap;
+        }
+        .price {
+          font-size: 60px;
+          line-height: 68px; /* 113.333% */
+          letter-spacing: -1.48px;
+        }
+        .icon-box {
+          width: 100px !important;
+          height: 100px !important;
+          background: rgba(71, 177, 106, 0.1);
+        }
+      }
+      .lower-content {
+        ul {
+          margin-bottom: 40px;
+          li + li {
+            margin-top: 15px;
+          }
+          li {
+            gap: 14px;
+            font-family: var(--font-inter);
+            line-height: 28px; /* 155.556% */
+            letter-spacing: -0.36px;
+            i {
+              font-size: 14px;
+              font-weight: 400;
+              color: var(--tertiary);
+              line-height: 28px;
+            }
+          }
+        }
+        button {
+          color: var(--black);
+          font-family: "Space Grotesk";
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 30px; /* 166.667% */
+          border-radius: 999px;
+          padding: 10px 30px;
+          border: 1px solid var(--border-color);
+          gap: 10px;
+          transition: var(--transition);
+          background: white;
+        }
+      }
+    }
+  }
+}
