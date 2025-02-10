@@ -2221,10 +2221,12 @@ p {
 }
 .pricing-section .main-pricing .pricing-card {
   padding: 40px;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  border: 1px solid transparent;
 }
-.pricing-section .main-pricing .pricing-card:hover .lower-content button {
-  background: var(--primary);
-  color: white;
+.pricing-section .main-pricing .pricing-card:hover {
+  border-color: var(--tertiary);
 }
 .pricing-section .main-pricing .pricing-card .upper-content {
   margin-bottom: 40px;
@@ -2279,4 +2281,8 @@ p {
   -webkit-transition: var(--transition);
   transition: var(--transition);
   background: white;
+}
+.pricing-section .main-pricing .pricing-card .lower-content button:hover {
+  background: var(--primary);
+  color: white;
 }

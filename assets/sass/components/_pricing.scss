@@ -10,13 +10,10 @@
     --bs-gutter-y: 30px;
     .pricing-card {
       padding: 40px;
+      transition: var(--transition);
+      border: 1px solid transparent;
       &:hover {
-        .lower-content {
-          button {
-            background: var(--primary);
-            color: white;
-          }
-        }
+        border-color: var(--tertiary);
       }
       .upper-content {
         margin-bottom: 40px;
@@ -71,6 +68,10 @@
           gap: 10px;
           transition: var(--transition);
           background: white;
+          &:hover {
+            background: var(--primary);
+            color: white;
+          }
         }
       }
     }
