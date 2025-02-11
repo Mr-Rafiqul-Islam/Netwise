@@ -2467,6 +2467,92 @@ p {
   margin-left: 29px;
 }
 
+.footer-section-two {
+  padding-top: 360px;
+}
+.footer-section-two .video-image {
+  margin-top: -360px;
+}
+.footer-section-two .video-image .icon-box {
+  width: 100px;
+  height: 100px;
+  font-size: 30px;
+}
+.footer-section-two .video-image .icon-box:hover {
+  background-color: var(--tertiary);
+}
+.footer-section-two .footer-bg {
+  background-position: bottom right;
+  padding: 120px 0 30px 0;
+  background-color: var(--black);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer-section-two .footer-bg .footer-widget .social-icon-box li a {
+  color: white;
+  border-color: var(--primary);
+}
+.footer-section-two .footer-bg .footer-widget .social-icon-box li a:hover {
+  border-color: var(--tertiary);
+}
+.footer-section-two .footer-bg .footer-widget .footer-title {
+  margin-bottom: 43px;
+}
+.footer-section-two .footer-bg .footer-links ul li a {
+  opacity: 1 !important;
+}
+.footer-section-two .footer-bg .footer-links ul li a:hover {
+  color: var(--tertiary);
+}
+.footer-section-two .footer-bg .newsletter-widget p {
+  color: white;
+  opacity: 0.8;
+  padding-right: 20px;
+}
+.footer-section-two .footer-bg .newsletter-widget .input-group {
+  max-width: 276px;
+}
+.footer-section-two .footer-bg .newsletter-widget .input-group .form-control {
+  width: 100%;
+  height: 63px;
+  border-radius: 50px !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0 20px;
+  border: 0;
+  color: rgba(255, 255, 255, 0.8);
+  padding-right: 73px;
+}
+.footer-section-two .footer-bg .newsletter-widget .input-group .form-control:focus {
+  z-index: 1;
+}
+.footer-section-two .footer-bg .newsletter-widget .input-group .form-control::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer-section-two .footer-bg .newsletter-widget .input-group .form-control::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer-section-two .footer-bg .newsletter-widget .input-group .form-control:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer-section-two .footer-bg .newsletter-widget .input-group .form-control::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer-section-two .footer-bg .newsletter-widget .input-group .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.footer-section-two .footer-bg .newsletter-widget .input-group button {
+  width: 65px;
+  height: 63px;
+  background-color: var(--tertiary);
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  color: white;
+  border: 0;
+}
+.footer-section-two .footer-bg .footer-bottom {
+  border-color: var(--black);
+}
+
 .about-section .section-title {
   margin-bottom: 20px;
 }
