@@ -35,7 +35,7 @@
       p {
         margin-bottom: 30px;
       }
-      .btn-arrow-fill{
+      .btn-arrow-fill {
         fill: var(--black);
       }
     }
@@ -109,5 +109,55 @@
         }
       }
     }
+  }
+}
+
+// blog section two css start
+.blog-section-two {
+  .blog-item {
+    margin: 0 15px;
+    box-shadow: none;
+
+    .img {
+      border-top-right-radius: 30px !important;
+      border-top-left-radius: 30px !important;
+
+      img {
+        transition: var(--transition);
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .blog-title {
+      margin-bottom: 30px !important;
+    }
+  }
+
+  .arrows {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--tertiary);
+    background: rgba(71, 177, 106, 0.1);
+    cursor: pointer;
+    transition: var(--transition);
+    position: absolute;
+    top: -123px;
+    left: calc(100% - 75px);
+    z-index: 9;
+    margin-top: 0;
+  }
+
+  .arrows:hover {
+    background: var(--tertiary);
+    color: white;
+  }
+
+  .arrow-prev {
+    margin-left: -80px;
   }
 }

@@ -2251,6 +2251,57 @@ p {
   content: "";
 }
 
+.blog-section-two .blog-item {
+  margin: 0 15px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.blog-section-two .blog-item .img {
+  border-top-right-radius: 30px !important;
+  border-top-left-radius: 30px !important;
+}
+.blog-section-two .blog-item .img img {
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog-section-two .blog-item .blog-title {
+  margin-bottom: 30px !important;
+}
+.blog-section-two .arrows {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--tertiary);
+  background: rgba(71, 177, 106, 0.1);
+  cursor: pointer;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  position: absolute;
+  top: -123px;
+  left: calc(100% - 75px);
+  z-index: 9;
+  margin-top: 0;
+}
+.blog-section-two .arrows:hover {
+  background: var(--tertiary);
+  color: white;
+}
+.blog-section-two .arrow-prev {
+  margin-left: -80px;
+}
+
 /*=============================
 	16. Footer CSS Start
 ===============================*/

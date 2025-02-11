@@ -1,5 +1,33 @@
 (function ($) {
   ("use strict");
+  // Blog slider js
+	$(".blog-slider").slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: false,
+		dots: false,
+		infinite: true,
+		arrows: true,
+		speed: 500,
+		prevArrow: `<i class="fa-solid arrows arrow-prev fa-arrow-left"></i>`,
+		nextArrow: `<i class="fa-solid arrows arrow-next fa-arrow-right"></i>`,
+		responsive: [{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					arrows: false,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					arrows: false,
+				}
+			}
+		]
+	});
+
   // Testimonial two slider js
 	$(".testimonial-two-slider").slick({
 		slidesToShow: 1,
