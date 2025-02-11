@@ -1,6 +1,15 @@
 (function ($) {
   ("use strict");
-
+  // Testimonial two slider js
+	$(".testimonial-two-slider").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		dots: true,
+		infinite: true,
+		arrows: false,
+		speed: 500,
+	});
   document.addEventListener("DOMContentLoaded", function () {
     let horizontalSection = document.querySelector('.horizontal-scroll');
     if (horizontalSection) {
