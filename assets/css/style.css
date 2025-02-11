@@ -237,6 +237,37 @@ p {
           transform: scale(1);
 }
 
+.theme-btn-tertiary {
+  background: var(--secondary);
+  border: 1px solid transparent;
+  color: var(--black);
+  position: relative;
+  z-index: 9;
+}
+.theme-btn-tertiary::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  top: 0;
+  left: 0;
+  content: "";
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  background: var(--tertiary);
+  z-index: -1;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.theme-btn-tertiary:hover {
+  color: white;
+  border-color: var(--tertiary);
+}
+.theme-btn-tertiary:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 .theme-btn-border {
   background: transparent;
   border: 1px solid var(--primary);
@@ -273,12 +304,12 @@ p {
           transform: scale(1);
 }
 
-.theme-btn-tertiary {
+.theme-btn-secondary {
   background-color: var(--secondary);
   color: var(--black);
   border: none !important;
 }
-.theme-btn-tertiary:hover {
+.theme-btn-secondary:hover {
   color: white;
 }
 
@@ -1669,6 +1700,66 @@ p {
   .message-section .message-image {
     max-width: 585px;
   }
+}
+
+.message-section-two {
+  padding-bottom: 120px;
+}
+.message-section-two::before {
+  display: none;
+}
+.message-section-two .message-main {
+  background-color: white;
+  padding: 80px 60px;
+}
+.message-section-two .message-main .message-form .input-group .form-field {
+  background-color: var(--bg-one);
+  border-radius: 30px !important;
+}
+.message-section-two .message-main .message-form .input-group .textarea-control {
+  height: 150px;
+}
+.message-section-two .message-main .message-contact-info {
+  padding: 80px 40px;
+  background-color: var(--tertiary);
+  height: 100%;
+}
+.message-section-two .message-main .message-contact-info .contact-info li {
+  gap: 15px;
+}
+.message-section-two .message-main .message-contact-info .contact-info li .icon {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+.message-section-two .message-main .message-contact-info .contact-info .cn-title {
+  color: white;
+  opacity: 0.8;
+  margin-bottom: 2px;
+}
+.message-section-two .message-main .message-contact-info .contact-info .cn-info {
+  color: white;
+  opacity: 0.8;
+}
+.message-section-two .message-main .message-contact-info .contact-info .cn-info a {
+  color: white;
+  opacity: 0.8;
+}
+.message-section-two .message-main .message-contact-info .contact-info .cn-info a:hover {
+  opacity: 1;
+}
+.message-section-two .message-main .message-contact-info .contact-info li + li {
+  margin-top: 58px;
+}
+.message-section-two.style2 {
+  padding-bottom: 0;
+}
+.message-section-two.style2 .message-main {
+  border: 1px solid var(--border-color);
 }
 
 /*=============================

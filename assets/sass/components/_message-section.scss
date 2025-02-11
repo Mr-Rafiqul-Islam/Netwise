@@ -37,3 +37,87 @@
     }
   }
 }
+
+// messages section two
+.message-section-two {
+  padding-bottom: 120px;
+
+  &::before {
+    display: none;
+  }
+
+  .message-main {
+    background-color: white;
+    padding: 80px 60px;
+
+    .message-form {
+      .input-group {
+        .form-field {
+          background-color: var(--bg-one);
+          border-radius: 30px !important;
+        }
+
+        .textarea-control {
+          height: 150px;
+        }
+      }
+    }
+
+    .message-contact-info {
+      padding: 80px 40px;
+      background-color: var(--tertiary);
+      height: 100%;
+
+      .contact-info {
+        li {
+          gap: 15px;
+
+          .icon {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+          }
+        }
+
+        .cn-title {
+          color: white;
+          opacity: 0.8;
+          margin-bottom: 2px;
+        }
+
+        .cn-info {
+          color: white;
+          opacity: 0.8;
+
+          a {
+            color: white;
+            opacity: 0.8;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+
+        li + li {
+          margin-top: 58px;
+        }
+      }
+    }
+  }
+
+  &.style2 {
+    padding-bottom: 0;
+
+    .message-main {
+      border: 1px solid var(--border-color);
+    }
+  }
+}
+
+
+
