@@ -5,6 +5,14 @@
  */
 
 .pricing-section {
+  &.style2{
+    .pricing-card{
+      background-color: var(--bg-one) !important;
+      &:hover {
+        background-color: white !important;
+      }
+    }
+  }
   .main-pricing {
     --bs-gutter-x: 30px;
     --bs-gutter-y: 30px;
@@ -67,7 +75,7 @@
           border: 1px solid var(--border-color);
           gap: 10px;
           transition: var(--transition);
-          background: white;
+          background: transparent;
           &:hover {
             background: var(--primary);
             color: white;
