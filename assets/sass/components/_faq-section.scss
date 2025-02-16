@@ -2,6 +2,20 @@
 	14. Faq Section CSS start
 ===============================*/
 .faq-section {
+  &.style2{
+    .accordion-item {
+      border: 1px solid var(--tertiary) !important;
+    }
+    .clients {
+      background-color: var(--primary)!important;
+      .client-number {
+        color: white !important;
+      }
+      .trust {
+        color: white !important;
+      }
+    }
+  }
     .faq-body {
       .accordion-button {
         &:focus {

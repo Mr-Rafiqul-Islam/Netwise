@@ -7,6 +7,11 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  &.style2{
+    .service-card{
+      margin: 0 !important;
+    }
+  }
   .section-title {
     margin-bottom: 60px;
     .title {

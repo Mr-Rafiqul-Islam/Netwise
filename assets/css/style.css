@@ -1197,6 +1197,9 @@ p {
   background-position: center;
   background-repeat: no-repeat;
 }
+.service-section.style2 .service-card {
+  margin: 0 !important;
+}
 .service-section .section-title {
   margin-bottom: 60px;
 }
@@ -1760,9 +1763,6 @@ p {
 .message-section-two .message-main .message-contact-info .contact-info li + li {
   margin-top: 58px;
 }
-.message-section-two.style2 {
-  padding-bottom: 0;
-}
 .message-section-two.style2 .message-main {
   border: 1px solid var(--border-color);
 }
@@ -2091,6 +2091,18 @@ p {
 /*=============================
 	14. Faq Section CSS start
 ===============================*/
+.faq-section.style2 .accordion-item {
+  border: 1px solid var(--tertiary) !important;
+}
+.faq-section.style2 .clients {
+  background-color: var(--primary) !important;
+}
+.faq-section.style2 .clients .client-number {
+  color: white !important;
+}
+.faq-section.style2 .clients .trust {
+  color: white !important;
+}
 .faq-section .faq-body .accordion-button {
   color: var(--black);
   font-size: var(--font-size);
