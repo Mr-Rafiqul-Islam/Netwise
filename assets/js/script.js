@@ -1,5 +1,8 @@
 (function ($) {
   ("use strict");
+  // dynamic year for copyright
+  document.getElementById("copyright_year").textContent = new Date().getFullYear();
+
   // Blog slider js
 	$(".blog-slider").slick({
 		slidesToShow: 3,
