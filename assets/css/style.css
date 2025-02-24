@@ -521,6 +521,15 @@ p {
   bottom: 24px;
 }
 
+/* Reveal image */
+.reveal {
+  visibility: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden !important;
+}
+
 /*=============================
 	03. Header CSS start
 ===============================*/
