@@ -1,5 +1,14 @@
 (function ($) {
   ("use strict");
+
+  // Preloader js
+	function preloader() {
+		$('#preloader').delay(0).fadeOut();
+	};
+
+	$(window).on('load', function () {
+		preloader();
+	});
   // dynamic year for copyright
   document.getElementById("copyright_year").textContent = new Date().getFullYear();
 
