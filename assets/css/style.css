@@ -252,6 +252,32 @@ p {
   position: relative;
   z-index: 9;
 }
+.theme-btn-tertiary.style2 {
+  background: var(--tertiary);
+  border: none;
+  color: white;
+  position: relative;
+  z-index: 9;
+}
+.theme-btn-tertiary.style2::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  top: 0;
+  left: 0;
+  content: "";
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  background: var(--black);
+  z-index: -1;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.theme-btn-tertiary.style2:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
 .theme-btn-tertiary::before {
   position: absolute;
   width: 100%;
@@ -2983,4 +3009,69 @@ p {
 .contact-section .contact-map iframe {
   width: 100%;
   height: 737px;
+}
+@media screen and (max-width: 1199.98px) {
+  .contact-section .contact-map iframe {
+    height: 437px;
+  }
+}
+.contact-section .contact-form {
+  border-radius: 40px;
+  padding: 60px;
+  margin-bottom: -125px;
+  z-index: 1;
+}
+@media screen and (max-width: 991.98px) {
+  .contact-section .contact-form {
+    padding: 30px;
+  }
+}
+.contact-section .contact-form .title {
+  margin-bottom: 46px;
+}
+@media (max-width: 991.98px) {
+  .contact-section .contact-form .title {
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .contact-section .contact-form .title {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+}
+.contact-section .contact-form .input-group .form-field {
+  background-color: transparent;
+  height: 60px;
+}
+.contact-section .contact-form .input-group .textarea-control {
+  height: 149px;
+}
+.contact-section .contact-form .theme-btn {
+  max-width: 570px;
+  width: 100%;
+}
+.contact-section .contact-map {
+  margin-bottom: -128px;
+}
+.contact-section .contact-map iframe {
+  width: 100%;
+  height: 737px;
+}
+.contact-section .ajax-response {
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+.contact-section .ajax-response.error {
+  color: red;
+  background-color: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.5);
+}
+.contact-section .ajax-response.success {
+  color: green;
+  background-color: rgba(0, 128, 0, 0.1);
+  border: 1px solid rgba(0, 128, 0, 0.5);
 }
