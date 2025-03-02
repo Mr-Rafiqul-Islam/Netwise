@@ -2972,6 +2972,48 @@ p {
   color: var(--black);
 }
 
+.single-blog .blog-item {
+  margin-bottom: 80px;
+}
+.single-blog .blog-item .text {
+  padding: 30px 40px 40px 40px;
+}
+.single-blog .blog-item .text .blog-title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px; /* 125% */
+  letter-spacing: -0.64px;
+  margin-bottom: 0 !important;
+}
+.single-blog .blog-item .text p {
+  margin-bottom: 50px !important;
+  margin-top: 30px;
+}
+.single-blog .pagination ul {
+  gap: 15px;
+}
+.single-blog .pagination ul li .paginate {
+  width: 60px;
+  height: 60px;
+  border: 0;
+  border: 1px solid var(--border-color);
+  font-weight: 700;
+  color: var(--black);
+  font-size: 22px;
+  font-family: var(--font-Space);
+  line-height: 36px;
+}
+.single-blog .pagination ul li .paginate:hover {
+  background-color: var(--primary);
+  border-color: transparent;
+  color: white;
+}
+.single-blog .pagination ul li .paginate.active {
+  border-color: transparent;
+  background-color: var(--primary);
+  color: white;
+}
+
 .blog-sidebar .blog-widget {
   border: 1px solid var(--border-color);
   padding: 40px;
