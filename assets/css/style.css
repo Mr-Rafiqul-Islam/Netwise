@@ -196,6 +196,10 @@ p {
   margin-bottom: 20px !important;
 }
 
+.my-30 {
+  margin: 30px 0 !important;
+}
+
 /*=============================
 	B. Button CSS Start
 ===============================*/
@@ -3149,6 +3153,199 @@ p {
   margin-top: 60px;
 }
 
+/*=============================
+  24. Blog Details Page SCSS Start
+===============================*/
+.blog-details-section .blog-details-banner {
+  border-radius: 20px 20px 0 0;
+}
+.blog-details-section .blog-details-banner img {
+  border-radius: 20px 20px 0 0;
+}
+.blog-details-section .blog-details-banner .blog-meta {
+  background-color: var(--primary);
+  padding: 8px 20px;
+  top: 40px;
+  left: 40px;
+}
+.blog-details-section .blog-details-banner .blog-meta a {
+  color: white;
+}
+.blog-details-section .blog-details-banner .blog-meta a i {
+  color: white;
+}
+.blog-details-section .blog-description {
+  padding: 22px 40px 40px;
+  border: 2px solid var(--border-color);
+  border-top: 0;
+  border-radius: 0px 0px 20px 20px;
+}
+.blog-details-section .blog-description p + p {
+  margin-top: 20px;
+}
+.blog-details-section .blog-description .list-info {
+  margin: 20px 0 40px 0;
+}
+.blog-details-section .blog-description .list-info li i {
+  color: var(--tertiary);
+  margin-right: 15px;
+}
+.blog-details-section .blog-description .list-info li + li {
+  margin-top: 15px;
+}
+.blog-details-section .blog-description blockquote {
+  padding: 20px 30px 30px;
+  margin-bottom: 60px;
+}
+.blog-details-section .blog-description blockquote .name {
+  padding-left: 40px;
+}
+.blog-details-section .blog-description blockquote .name::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 30px;
+  height: 2px;
+  background-color: var(--primary);
+  content: "";
+}
+.blog-details-section .blog-description .tags-and-social-icon {
+  margin-top: 33px;
+  border-top: 2px solid var(--border-color);
+  padding-top: 21px;
+}
+.blog-details-section .blog-description .tags-and-social-icon .tags {
+  gap: 32px;
+}
+.blog-details-section .blog-description .tags-and-social-icon .tags ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 9px;
+}
+.blog-details-section .blog-description .tags-and-social-icon .tags ul li a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--paragraph-color);
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  padding: 5px 10px;
+}
+.blog-details-section .blog-description .tags-and-social-icon .tags ul li a:hover {
+  border-color: var(--black);
+  background-color: var(--black);
+  color: white;
+}
+.blog-details-section .blog-description .tags-and-social-icon .social-icons li {
+  margin-right: 0 !important;
+}
+.blog-details-section .blog-description .tags-and-social-icon .social-icons li a {
+  color: var(--black) !important;
+  border-radius: 50%;
+  font-size: 16px;
+}
+.blog-details-section .blog-description .tags-and-social-icon .social-icons li a:hover {
+  color: white !important;
+}
+.blog-details-section .blog-details-pagination {
+  padding: 30px;
+  margin-top: 60px;
+}
+.blog-details-section .blog-details-pagination ul {
+  position: relative;
+}
+.blog-details-section .blog-details-pagination ul li a {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--black);
+}
+.blog-details-section .blog-details-pagination ul li a .icon {
+  width: 50px;
+  height: 50px;
+  color: var(--black);
+  border: 1px solid var(--border-color);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.blog-details-section .blog-details-pagination ul li a:hover .icon,
+.blog-details-section .blog-details-pagination ul li a .active .icon {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.blog-details-section .blog-details-pagination ul::before {
+  width: 1px;
+  height: 50px;
+  background-color: var(--tertiary);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  content: "";
+}
+.blog-details-section .comment-box {
+  margin-top: 120px;
+}
+.blog-details-section .comment-box .comment-form .input-group .form-field {
+  height: 60px !important;
+}
+.blog-details-section .comment-box .comment-form .input-group .textarea-control {
+  height: 166px !important;
+}
+
+@media (max-width: 1399.98px) {
+  .blog-details-section .blog-description .tags-and-social-icon .tags ul li {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767.98px) {
+  .blog-details-section .blog-description {
+    padding: 22px 24px 30px;
+  }
+  .blog-details-section .blog-description .tags-and-social-icon .tags ul li a {
+    font-size: 16px;
+  }
+  .blog-details-section .blog-details-pagination ul li a .icon {
+    width: 45px;
+    height: 45px;
+  }
+}
+@media (max-width: 575.98px) {
+  .blog-details-section .blog-details-banner .blog-meta {
+    position: static !important;
+    margin-top: 20px;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 5px !important;
+  }
+  .blog-details-section .blog-description {
+    border-top: 2px solid var(--border-color);
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+  }
+  .blog-details-section .blog-description .title {
+    font-size: 28px;
+  }
+  .blog-details-section .blog-description .list-info .list-title {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  .blog-details-section .blog-details-pagination {
+    padding: 20px;
+    margin-top: 60px;
+  }
+  .blog-details-section .blog-details-pagination ul::before {
+    display: none;
+  }
+}
 /*=============================
 	17. Contact Page CSS start
 ===============================*/
