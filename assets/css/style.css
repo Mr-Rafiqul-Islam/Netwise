@@ -3088,6 +3088,114 @@ p {
   }
 }
 
+/*==================================
+	22. Project Details Page CSS Start
+====================================*/
+.project-details-section .project-banner-image {
+  margin-bottom: 80px;
+}
+.project-details-section .project-banner-image .project-information {
+  bottom: -70px;
+  right: 60px;
+  background-color: white;
+  padding: 30px;
+  max-width: 410px;
+  width: 100%;
+  -webkit-box-shadow: 0px 5px 60px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 5px 60px rgba(0, 0, 0, 0.05);
+}
+.project-details-section .project-banner-image .project-information .title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  padding: 14px 20px;
+  border: 1px solid var(--primary);
+}
+.project-details-section .project-banner-image .project-information .options li {
+  padding: 14px 20px;
+}
+.project-details-section .project-banner-image .project-information .options li .label {
+  max-width: 95px;
+  width: 100%;
+}
+.project-details-section .project-banner-image .project-information .options li + li {
+  margin-top: 20px;
+}
+.project-details-section .project-banner-image .project-information .options li .rating {
+  color: var(--black);
+}
+.project-details-section .project-banner-image .project-information .social-icons li {
+  margin: 0 2px;
+}
+.project-details-section .project-banner-image .project-information .social-icons li a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.project-details-section .project-description .title {
+  margin-bottom: 20px;
+}
+.project-details-section .project-description p + p {
+  margin-top: 20px;
+}
+.project-details-section .project-description .inner-options {
+  margin: 28px 0 60px 0;
+}
+.project-details-section .project-description .inner-options ul li {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--black);
+}
+.project-details-section .project-description .inner-options ul li img {
+  margin-right: 10px;
+}
+.project-details-section .project-description .inner-options ul li + li {
+  margin-top: 15px;
+}
+.project-details-section .project-description .list-info .info-item .info-title {
+  margin-bottom: 10px;
+}
+.project-details-section .project-description .list-info .info-item .info-title i {
+  color: var(--tertiary);
+  margin-right: 10px;
+  font-size: 16px;
+}
+@media (max-width: 1199.98px) {
+  .project-details-section .project-banner-image .project-information {
+    right: 30px;
+  }
+  .project-details-section .project-banner-image .project-information .title {
+    font-size: 22px;
+  }
+  .project-details-section .project-banner-image .project-information .options li + li {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 991.98px) {
+  .project-details-section .project-banner-image .project-information {
+    max-width: 100%;
+    width: 100%;
+    position: static !important;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .project-details-section .project-description .title {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  .project-details-section .project-banner-image .project-information .options li p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 575.98px) {
+  .project-details-section .project-description .inner-options ul li {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
 .single-blog .blog-item {
   margin-bottom: 80px;
 }
