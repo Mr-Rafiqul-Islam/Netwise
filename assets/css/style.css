@@ -38,6 +38,7 @@
 17. Home Two CSS
 18. About Page CSS 
 19. Contact Page CSS 
+20. Service Details Page CSS 
 ============================
 */
 /*=============================
@@ -2974,6 +2975,117 @@ p {
 }
 .page-header-section .bread-crumb ul li a {
   color: var(--black);
+}
+
+.service-details-section .service-details .service-text p + p {
+  margin-top: 20px;
+}
+.service-details-section .service-details .service-text .title {
+  margin-bottom: 20px;
+}
+.service-details-section .service-details .service-text .sub-title {
+  margin: 30px 0 10px 0;
+}
+.service-details-section .service-details .service-text .options {
+  margin: 20px 0 62px 0;
+}
+.service-details-section .service-details .service-text .options li i {
+  font-size: 16px;
+  margin-right: 10px;
+  color: var(--tertiary);
+}
+.service-details-section .service-details .service-text .options li + li {
+  margin-top: 14px;
+}
+.service-details-section .service-details .service-text .inner-details {
+  margin-bottom: 60px;
+}
+.service-details-section .service-details .service-text .inner-details .inner-options {
+  margin-top: 20px !important;
+}
+.service-details-section .service-details .service-text .inner-details .inner-options li {
+  color: var(--paragraph-color);
+}
+.service-details-section .service-details .service-text .inner-details .inner-options li i {
+  font-size: 14px;
+  margin-right: 10px;
+  color: var(--primary);
+}
+.service-details-section .service-details .service-text .inner-details .inner-options li + li {
+  margin-top: 10px;
+}
+.service-details-section .service-sidebar {
+  border: 1px solid var(--border-color);
+  padding: 40px;
+  position: sticky;
+  top: 120px;
+}
+.service-details-section .service-sidebar .sidebar-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 36px;
+  padding-right: 20px;
+}
+.service-details-section .service-sidebar .sidebar-title::before {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: var(--primary);
+  content: "";
+  width: 30px;
+  height: 2px;
+}
+.service-details-section .service-sidebar .sidebar-title::after {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: var(--primary);
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.service-details-section .service-sidebar .category li a {
+  background-color: var(--bg-one);
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--black);
+  line-height: 30px;
+  padding: 10px 20px;
+  gap: 15px;
+}
+.service-details-section .service-sidebar .category li a span {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--paragraph-color);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.service-details-section .service-sidebar .category li a:hover {
+  background-color: var(--primary);
+  color: white;
+}
+.service-details-section .service-sidebar .category li a:hover span {
+  color: white !important;
+}
+.service-details-section .service-sidebar .category li + li {
+  margin-top: 20px;
+}
+@media (max-width: 1399.98px) {
+  .service-details-section .service-sidebar {
+    padding: 24px;
+  }
+  .service-details-section .service-sidebar .category li a {
+    font-size: 17px;
+  }
+  .service-details-section .service-sidebar .category li a span {
+    font-size: 17px;
+  }
 }
 
 .single-blog .blog-item {
