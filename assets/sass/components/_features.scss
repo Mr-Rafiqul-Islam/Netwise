@@ -30,6 +30,9 @@
       z-index: 2;
       right: 0;
       bottom: -80px;
+      @media screen and (max-width:575.98px){
+        display: none;
+      }
     }
   }
   .feature-content {

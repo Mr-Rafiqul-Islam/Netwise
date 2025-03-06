@@ -216,7 +216,7 @@ p {
 }
 @media screen and (max-width: 576.98px) {
   .theme-btn {
-    font: 16px;
+    font-size: 16px;
   }
 }
 .theme-btn .btn-arrow {
@@ -1285,6 +1285,11 @@ p {
   z-index: 2;
   right: 0;
   bottom: -80px;
+}
+@media screen and (max-width: 575.98px) {
+  .feature-section .feature-img .img-child {
+    display: none;
+  }
 }
 .feature-section .feature-content {
   padding-left: 53px;
