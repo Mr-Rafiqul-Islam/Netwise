@@ -15,12 +15,25 @@
       @media screen and (max-width: 991.98px) {
         margin: 0 auto;
         text-align: center !important;
+        margin-top: 20px;
+        span {
+          text-align: center !important;
+        }
       }
       .title-shape {
         right: 80px;
         top: -20px;
-        @media (max-width: 1199.98px) {
+        @media (max-width: 1399.98px) {
           right: 8px;
+        }
+        @media (max-width: 991.98px) {
+          right: -8px;
+        }
+        @media (max-width: 767.98px) {
+          right: -20px;
+        }
+        @media (max-width: 375.98px) {
+          width: 65px;
         }
       }
       max-width: 541px;
@@ -30,6 +43,10 @@
       @media (max-width: 1199.98px) {
         font-size: 60px;
         line-height: 70px;
+      }
+      @media (max-width: 576.98px) {
+        font-size: 45px;
+        line-height: 60px;
       }
     }
     .banner-info {
@@ -44,6 +61,9 @@
     }
     .banner-btn {
       gap: 50px;
+      @media screen and (max-width: 576.98px) {
+        gap: 16px;
+      }
       @media screen and (max-width: 991.98px) {
         justify-content: center;
         margin-top: 15px;
