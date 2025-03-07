@@ -7,8 +7,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  &.style2{
-    .service-card{
+  &.style2 {
+    .service-card {
       margin: 0 !important;
     }
   }
@@ -38,12 +38,30 @@
       border-color: var(--tertiary);
       color: var(--tertiary);
     }
+    @media (max-width: 767.98px) {
+      width: 56px;
+      height: 56px;
+      border: 3px solid var(--paragraph-color);
+    }
+    @media screen and (max-width: 575.98px) {
+      left: 50%;
+      top: unset !important;
+      bottom: -84px;
+      transform: translateX(-50%);
+    }
   }
   .arrow-next {
     right: 12px;
+    @media screen and (max-width:575.98px) {
+      right: unset;
+      margin-left: 35px;
+    }
   }
   .arrow-prev {
     right: 92px;
+    @media screen and (max-width: 575.98px) {
+      margin-left: -35px;
+    }
   }
   .service-card {
     background: white;
@@ -129,7 +147,7 @@
         }
       }
     }
-    .slick-list{
+    .slick-list {
       padding: 20px 0;
       margin: -20px 0;
     }
