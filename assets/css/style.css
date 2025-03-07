@@ -1545,6 +1545,18 @@ p {
   font-size: 74px;
   line-height: 84px;
 }
+@media (max-width: 1199.98px) {
+  .counter-section .section-title .title {
+    font-size: 56px;
+    line-height: 68px;
+  }
+}
+@media (max-width: 991.98px) {
+  .counter-section .section-title .title {
+    font-size: 50px;
+    line-height: 66px;
+  }
+}
 .counter-section .counter-area .counter-desc {
   margin-bottom: 68px;
 }
@@ -1567,6 +1579,11 @@ p {
 }
 .counter-section .img-area {
   padding-left: 50px;
+}
+@media screen and (max-width: 991.98px) {
+  .counter-section .img-area {
+    padding-left: 0;
+  }
 }
 
 .counter-section-two {
