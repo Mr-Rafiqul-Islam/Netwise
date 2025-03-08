@@ -1778,6 +1778,46 @@ p {
   background: var(--tertiary) !important;
 }
 
+@media (max-width: 1399.98px) {
+  .team-section .team-card .hover-img {
+    max-width: 250px;
+  }
+}
+@media (max-width: 991.98px) {
+  .team-section .social-icons a {
+    background-color: white;
+    color: var(--black);
+  }
+  .team-section .social-icons a:hover {
+    color: white;
+  }
+  .team-section-two .short-info {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  .team-section .team-card {
+    padding: 30px;
+    text-align: center;
+  }
+  .team-section .team-card .hover-img {
+    position: static !important;
+    -webkit-transform: unset !important;
+            transform: unset !important;
+    margin: 0 auto;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .team-section .team-card .social-icons {
+    margin-left: 0;
+  }
+  .team-section .team-card + .team-card {
+    margin-top: 30px;
+  }
+  .team-section .team-btn {
+    margin-top: 40px;
+  }
+}
 .team-section-two .section-title {
   margin-bottom: 34px;
 }
