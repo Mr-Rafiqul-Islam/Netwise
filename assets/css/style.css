@@ -2387,6 +2387,11 @@ p {
 .faq-section .faq-images {
   padding-left: 50px;
 }
+@media screen and (max-width: 991.98px) {
+  .faq-section .faq-images {
+    padding-left: 0;
+  }
+}
 .faq-section .faq-images .clients {
   height: 100%;
   background-color: var(--secondary);

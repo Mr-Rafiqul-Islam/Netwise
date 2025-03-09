@@ -64,6 +64,9 @@
   
     .faq-images {
       padding-left: 50px;
+      @media screen and (max-width:991.98px) {
+        padding-left: 0;
+      }
   
       .clients {
         height: 100%;
