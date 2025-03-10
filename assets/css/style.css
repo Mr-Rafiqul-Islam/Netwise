@@ -809,7 +809,7 @@ p {
   left: 0;
   max-width: 600px;
   width: 100%;
-  height: 100%;
+  height: 100px;
   background-color: var(--tertiary);
   z-index: 1;
 }
@@ -1178,14 +1178,56 @@ p {
   background: var(--black);
   clip-path: polygon(0 0, 74% 0, 100% 100%, 0% 100%);
 }
+@media (max-width: 1799.98px) {
+  .banner-section-two::before {
+    width: 68%;
+    clip-path: polygon(0 0, calc(100% - 340px) 0, 100% 100%, 0% 100%);
+  }
+}
+@media (max-width: 1199.98px) {
+  .banner-section-two::before {
+    width: 74%;
+  }
+}
+@media (max-width: 991.98px) {
+  .banner-section-two::before {
+    width: 100%;
+    clip-path: none;
+  }
+}
 .banner-section-two .banner-content {
   padding-right: 64px;
+}
+@media (max-width: 991.98px) {
+  .banner-section-two .banner-content {
+    padding-right: 0;
+    text-align: center;
+  }
 }
 .banner-section-two .banner-content .banner-title {
   color: #fff;
   font-size: 92px;
   line-height: 100px; /* 108.655% */
   letter-spacing: -1.841px;
+}
+@media (max-width: 1399.98px) {
+  .banner-section-two .banner-content .banner-title {
+    font-size: 68px;
+    line-height: 78px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .banner-section-two .banner-content .banner-title {
+    font-size: 52px;
+    line-height: 63px;
+  }
+}
+@media (max-width: 575.98px) {
+  .banner-section-two .banner-content .banner-title {
+    font-size: 44px;
+    line-height: 56px;
+    text-align: center !important;
+  }
 }
 .banner-section-two .banner-content .banner-info {
   color: white;
@@ -1194,11 +1236,21 @@ p {
   margin-top: 28.5px;
   margin-bottom: 30px;
 }
+@media (max-width: 991.98px) {
+  .banner-section-two .banner-content .banner-info {
+    margin: 28px auto 30px;
+  }
+}
 .banner-section-two .banner-content .play-video {
   width: 203px;
   height: 203px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.05);
+}
+@media (max-width: 991.98px) {
+  .banner-section-two .banner-content .play-video {
+    margin: 0 auto;
+  }
 }
 .banner-section-two .banner-content .play-video img {
   -webkit-animation: spin 26s infinite linear;
@@ -1217,17 +1269,114 @@ p {
   -webkit-transform: translateX(57px);
           transform: translateX(57px);
 }
+@media (max-width: 1799.98px) {
+  .banner-section-two .banner-img {
+    width: 810px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .banner-section-two .banner-img {
+    width: 677px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .banner-section-two .banner-img {
+    width: 606px;
+  }
+}
+@media (max-width: 767.98px) {
+  .banner-section-two .banner-img {
+    width: 100%;
+  }
+}
+@media (max-width: 991.98px) {
+  .banner-section-two .banner-img {
+    margin: 0 auto;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
 .banner-section-two .banner-shapes .shape-1 {
   left: 50px;
   top: -125px;
+}
+@media (max-width: 1799.98px) {
+  .banner-section-two .banner-shapes .shape-1 {
+    left: 70px;
+  }
+}
+@media (max-width: 1399.98px) {
+  .banner-section-two .banner-shapes .shape-1 {
+    left: 20px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .banner-section-two .banner-shapes .shape-1 {
+    left: 12px;
+  }
+}
+@media (max-width: 991.98px) {
+  .banner-section-two .banner-shapes .shape-1 {
+    display: none;
+  }
 }
 .banner-section-two .banner-shapes .shape-2 {
   left: -18px;
   bottom: 155px;
 }
+@media (max-width: 1399.98px) {
+  .banner-section-two .banner-shapes .shape-2 {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+    left: -8px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .banner-section-two .banner-shapes .shape-2 {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+}
+@media (max-width: 991.98px) {
+  .banner-section-two .banner-shapes .shape-2 {
+    display: none;
+  }
+}
 .banner-section-two .banner-object {
   right: -25px;
   top: -75px;
+}
+@media (max-width: 1799.98px) {
+  .banner-section-two .banner-object {
+    top: unset;
+    bottom: 0;
+  }
+}
+@media (max-width: 1399.98px) {
+  .banner-section-two .banner-object {
+    top: 175px;
+    bottom: unset;
+  }
+}
+@media (max-width: 1199.98px) {
+  .banner-section-two .banner-object {
+    top: 175px;
+  }
+}
+@media (max-width: 1799.98px) {
+  .banner-section-two .banner-object img {
+    height: 548px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .banner-section-two .banner-object img {
+    height: 446px;
+  }
+}
+@media (max-width: 991.98px) {
+  .banner-section-two .banner-object {
+    display: none;
+  }
 }
 
 @-webkit-keyframes spin {
