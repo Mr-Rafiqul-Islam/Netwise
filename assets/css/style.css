@@ -3102,6 +3102,22 @@ p {
 .about-section .section-title {
   margin-bottom: 20px;
 }
+@media (max-width: 1399.98px) {
+  .about-section .about-img {
+    padding-right: 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .about-section .about-img {
+    padding-right: 0;
+    margin-top: -80px;
+  }
+}
+@media (max-width: 575.98px) {
+  .about-section .about-img {
+    margin-left: -36px;
+  }
+}
 .about-section .about-img .img-main {
   max-width: 526px;
 }
@@ -3111,12 +3127,30 @@ p {
   -webkit-animation: spin 26s infinite linear;
           animation: spin 26s infinite linear;
 }
+@media (max-width: 767.98px) {
+  .about-section .about-img .img-main .about-shape {
+    top: 106px;
+    width: 120px;
+  }
+}
+@media (max-width: 575.98px) {
+  .about-section .about-img .img-main .about-shape {
+    top: 66px;
+    width: 78px;
+    right: 36px;
+  }
+}
 .about-section .about-img .clients {
   background-color: white;
   padding: 19px 30px;
   bottom: 100px;
   right: 15px;
   gap: 20px;
+}
+@media (max-width: 1399.98px) {
+  .about-section .about-img .clients {
+    bottom: 10px;
+  }
 }
 .about-section .about-img .clients .counter-info .number {
   font-family: var(--font-Space);
@@ -3126,8 +3160,35 @@ p {
   letter-spacing: -0.64px;
   color: var(--black);
 }
+@media (max-width: 575.98px) {
+  .about-section .about-img .clients .counter-info .number {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
 .about-section .about-img .box-icon img {
   width: 46px;
+}
+@media (max-width: 991.98px) {
+  .about-section .about-content {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 767.98px) {
+  .about-section .about-content .list-box {
+    margin-bottom: 32px;
+  }
+}
+.about-section .about-content .list-box .list-wrapper:last-child .list-info {
+  border-right: 0;
+}
+.about-section .about-content .list-box .list-wrapper .list-info {
+  border-right: 3px solid rgba(204, 204, 204, 0.5);
+}
+@media (max-width: 767.98px) {
+  .about-section .about-content .list-box .list-wrapper .list-info {
+    border-right: 0;
+  }
 }
 .about-section .about-content .list-box .list-wrapper .list-info li {
   text-wrap: nowrap;
