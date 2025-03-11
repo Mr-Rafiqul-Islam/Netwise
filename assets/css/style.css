@@ -1566,6 +1566,21 @@ p {
   transition: var(--transition);
   height: 100% !important;
 }
+@media (max-width: 1399.98px) {
+  .service-section .service-card {
+    padding: 40px 36px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .service-section .service-card {
+    padding: 34px;
+  }
+}
+@media (max-width: 991.98px) {
+  .service-section .service-card {
+    padding: 30px;
+  }
+}
 .service-section .service-card:hover {
   border-color: var(--black);
 }

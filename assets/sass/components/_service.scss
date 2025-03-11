@@ -71,6 +71,15 @@
     border: 1px solid var(--border-color);
     transition: var(--transition);
     height: 100% !important;
+    @media (max-width: 1399.98px) {
+      padding: 40px 36px;
+    }
+    @media (max-width: 1199.98px) {
+      padding: 34px;
+    }
+    @media (max-width: 991.98px) {
+      padding: 30px;
+    }
     &:hover {
       border-color: var(--black);
     }
@@ -159,6 +168,9 @@
     transition: var(--transition);
     border-bottom: 3px solid transparent;
     margin: 0 15px;
+    @media (max-width: 1399.98px) {
+      
+    }
     &:hover {
       border-color: var(--tertiary);
       box-shadow: none;
