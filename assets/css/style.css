@@ -2211,6 +2211,11 @@ p {
   background: var(--tertiary);
   padding: 144px 0 137px 0;
 }
+@media (max-width: 767.98px) {
+  .newsletter-section-two {
+    padding: 100px 0 100px 0;
+  }
+}
 .newsletter-section-two .title {
   font-size: 60px;
   line-height: 68px; /* 113.333% */
@@ -2225,6 +2230,11 @@ p {
 }
 .newsletter-section-two .action-btn {
   gap: 45px;
+}
+@media (max-width: 767.98px) {
+  .newsletter-section-two .action-btn {
+    gap: 15px;
+  }
 }
 
 /*=============================
