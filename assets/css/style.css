@@ -3324,6 +3324,16 @@ p {
   transition: var(--transition);
   border: 1px solid transparent;
 }
+@media (max-width: 1399.98px) {
+  .pricing-section .main-pricing .pricing-card {
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .pricing-section .main-pricing .pricing-card {
+    padding: 30px;
+  }
+}
 .pricing-section .main-pricing .pricing-card:hover {
   border-color: var(--tertiary);
 }
@@ -3331,23 +3341,59 @@ p {
   margin-bottom: 40px;
   gap: 34px;
 }
+@media (max-width: 991.98px) {
+  .pricing-section .main-pricing .pricing-card .upper-content {
+    gap: 20px;
+  }
+}
 .pricing-section .main-pricing .pricing-card .upper-content .title {
   margin-bottom: 20px;
   font-size: 32px;
   font-weight: 500 !important;
-  line-height: 40px; /* 125% */
+  line-height: 40px;
+  /* 125% */
   letter-spacing: -0.64px;
   text-wrap: nowrap;
 }
+@media (max-width: 1399.98px) {
+  .pricing-section .main-pricing .pricing-card .upper-content .title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+@media (max-width: 991.98px) {
+  .pricing-section .main-pricing .pricing-card .upper-content .title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
 .pricing-section .main-pricing .pricing-card .upper-content .price {
   font-size: 60px;
-  line-height: 68px; /* 113.333% */
+  line-height: 68px;
+  /* 113.333% */
   letter-spacing: -1.48px;
+}
+@media (max-width: 1399.98px) {
+  .pricing-section .main-pricing .pricing-card .upper-content .price {
+    font-size: 46px;
+  }
+}
+@media (max-width: 767.98px) {
+  .pricing-section .main-pricing .pricing-card .upper-content .price {
+    font-size: 38px;
+    line-height: 48px;
+  }
 }
 .pricing-section .main-pricing .pricing-card .upper-content .icon-box {
   width: 100px !important;
   height: 100px !important;
   background: rgba(71, 177, 106, 0.1);
+}
+@media (max-width: 1399.98px) {
+  .pricing-section .main-pricing .pricing-card .upper-content .icon-box {
+    width: 90px;
+    height: 90px;
+  }
 }
 .pricing-section .main-pricing .pricing-card .lower-content ul {
   margin-bottom: 40px;
@@ -3355,10 +3401,16 @@ p {
 .pricing-section .main-pricing .pricing-card .lower-content ul li + li {
   margin-top: 15px;
 }
+@media (max-width: 991.98px) {
+  .pricing-section .main-pricing .pricing-card .lower-content ul li + li {
+    margin-top: 10px;
+  }
+}
 .pricing-section .main-pricing .pricing-card .lower-content ul li {
   gap: 14px;
   font-family: var(--font-inter);
-  line-height: 28px; /* 155.556% */
+  line-height: 28px;
+  /* 155.556% */
   letter-spacing: -0.36px;
 }
 .pricing-section .main-pricing .pricing-card .lower-content ul li i {
@@ -3372,7 +3424,8 @@ p {
   font-family: "Space Grotesk";
   font-size: 18px;
   font-weight: 700;
-  line-height: 30px; /* 166.667% */
+  line-height: 30px;
+  /* 166.667% */
   border-radius: 999px;
   padding: 10px 30px;
   border: 1px solid var(--border-color);
