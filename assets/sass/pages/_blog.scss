@@ -3,6 +3,9 @@
 .single-blog {
   .blog-item {
     margin-bottom: 80px;
+    @media (max-width: 767.98px) {
+      margin-bottom: 40px !important;
+    }
     .text {
       padding: 30px 40px 40px 40px;
       .blog-title {
