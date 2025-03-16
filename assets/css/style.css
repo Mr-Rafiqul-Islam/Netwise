@@ -2152,6 +2152,11 @@ p {
   background-color: white;
   padding: 80px 60px;
 }
+@media (max-width: 767.98px) {
+  .message-section-two .message-main {
+    padding: 30px 24px;
+  }
+}
 .message-section-two .message-main .message-form .input-group .form-field {
   background-color: var(--bg-one);
   border-radius: 30px !important;
@@ -2163,6 +2168,11 @@ p {
   padding: 80px 40px;
   background-color: var(--tertiary);
   height: 100%;
+}
+@media (max-width: 767.98px) {
+  .message-section-two .message-main .message-contact-info {
+    padding: 40px 20px;
+  }
 }
 .message-section-two .message-main .message-contact-info .contact-info li {
   gap: 15px;
@@ -2180,6 +2190,11 @@ p {
   color: white;
   opacity: 0.8;
   margin-bottom: 2px;
+}
+@media (max-width: 575.98px) {
+  .message-section-two .message-main .message-contact-info .contact-info .cn-title {
+    font-size: 15px;
+  }
 }
 .message-section-two .message-main .message-contact-info .contact-info .cn-info {
   color: white;

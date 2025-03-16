@@ -50,7 +50,6 @@
 // messages section two
 .message-section-two {
   padding-bottom: 120px;
-
   &::before {
     display: none;
   }
@@ -58,7 +57,9 @@
   .message-main {
     background-color: white;
     padding: 80px 60px;
-
+    @media (max-width: 767.98px) {
+      padding: 30px 24px;
+    }
     .message-form {
       .input-group {
         .form-field {
@@ -76,7 +77,9 @@
       padding: 80px 40px;
       background-color: var(--tertiary);
       height: 100%;
-
+      @media (max-width: 767.98px) {
+        padding: 40px 20px;
+      }
       .contact-info {
         li {
           gap: 15px;
@@ -96,6 +99,9 @@
           color: white;
           opacity: 0.8;
           margin-bottom: 2px;
+          @media (max-width: 575.98px) {
+            font-size: 15px;
+          }
         }
 
         .cn-info {
