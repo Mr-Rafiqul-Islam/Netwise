@@ -3357,6 +3357,7 @@ p {
 }
 @media (max-width: 1399.98px) {
   .pricing-section .main-pricing .pricing-card .upper-content .title {
+    text-wrap: wrap;
     font-size: 28px;
     line-height: 36px;
   }

@@ -52,8 +52,9 @@
           /* 125% */
           letter-spacing: -0.64px;
           text-wrap: nowrap;
-
+          
           @media (max-width: 1399.98px) {
+            text-wrap: wrap;
             font-size: 28px;
             line-height: 36px;
           }
